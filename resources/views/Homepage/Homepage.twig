@@ -1,9 +1,112 @@
 {% extends getPartial('page-design') %}
 
+{% set showDefaultHomepage = config("Ceres.default.homepage") %}
+{% set companyLogo  = config("Ceres.header.company_logo") %}
+{% set companyName  = config("Ceres.header.company_name") %}
+
+{% block PartialHead %}
+    <meta name="description" content="{{ config("Ceres.meta."~metaLang~".description_home") }}">
+    <meta name="robots" content="{{ config("Ceres.meta.robots_home") }}">
+
+    <meta property="og:title" content="{{ companyName }}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}"/>
+    <meta property="og:image"
+          content="{% if ('http' in companyLogo) or ('layout/' in companyLogo) %}{{ companyLogo }}{% else %}{{ plugin_path('Ceres') }}/{{ companyLogo }}{% endif %}"/>
+
+    <script type="application/ld+json">
+        {"@context": "http://schema.org","@type": "WebSite","url": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}","potentialAction":{"@type": "SearchAction","target": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}/search?query={search_term}","query-input": "required name=search_term"}}
+    </script>
+
+    <title>{{ config("Ceres.header.company_name") }}</title>
+{% endblock %}
+
 {% block PageBody %}
 
-	<!-- Insert markup for homepage here -->
+    <!-- Insert markup for homepage here -->
+    <div class="container">
+        <div class="col-sm-12 col-md-7" style="padding-top:10px;">
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-5 hidden-xs-down">
+                    <img class="img-fluid" src="/images/gallery/startseite/laden_front.JPG" style="border:2px solid; border-color:#32A4CA; border-top-left-radius: 30px; margin-bottom:10px; " />
+                </div>
+                <div class="col-xs-12 col-sm-7 hidden-xs-down">
+                    <img border="1" class="img-fluid" src="/images/gallery/startseite/laden_innen.jpg" style="border:2px solid; border-color:#32A4CA; border-bottom-right-radius: 30px; margin-bottom:15px; max-width: 84%;" />
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-5 hidden-sm-up" style="padding-right:3px; padding-left:3px;">
+                    <img class="img-fluid" src="/images/gallery/startseite/laden_front.JPG" style="border:2px solid; border-color:#32A4CA; border-top-left-radius: 30px; margin-bottom:10px; " />
+                </div>
+                <div class="col-xs-12 col-sm-7 hidden-sm-up" style="padding-right:3px; padding-left:3px;">
+                    <img border="1" class="img-fluid" src="/images/gallery/startseite/laden_innen.jpg" style="border:2px solid; border-color:#32A4CA; border-bottom-right-radius: 30px; margin-bottom:15px;" />
+                </div>
+            </div>
+            <table border="0" style="margin-left:50px;">
+                <tbody>
+                <tr>
+                    <td>
+                        <p>Seit 2010 sind wir Ihr kompetenter Ansprechpartner für gebrauchte Business Notebooks, Service und Reparaturen. Online und im Ladengeschäft Karlsruhe.</p>
+                    </td>
+                    <td width="80px">
+                        <a class="btn btn-primary" style="float: right; top-margin:-2px;" type="button" href="">Über uns</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xs-12 col-md-5">
+            <div class="row">
+                <div class="col-xs-12 hidden-md-up">
+                    <hr class="margin-top-1 margin-bottom-2" />
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <b>Gebraucht ist nicht gleich gebraucht</b>
+                    <br />Aufbereitete (refurbished) Leasingrückläufer sind eine kostengünstige und ökologische Alternative zum Neugerät<ul style=" margin-left: 0.6em; padding-left: 0.6em;">	<li>hochwertige Business Qualität</li>	<li>mit 2 Jahren Garantie</li>	<li>preiswert &amp; leistungsstark</li></ul>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <img class="img-fluid" src="/images/gallery/startseite/laptop_nbp.jpg" style="margin: auto;" /><br /><a class="btn btn-block btn-primary" style="float: right; top-margin:-2px;" type="button" href="">mehr erfahren</a>
+                </div>
+                <div class="col-xs-12">
+                    <hr class="margin-top-1 margin-bottom-2" />
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <b>Ihr Reparaturservice in Karlsruhe</b>
+                    <ul style=" margin-left: 0.6em; padding-left: 0.6em;">	<li>kompetent, fair und preiswert</li>	<li>für Soft- und Hardwareprobleme</li>	<li>für Windows &amp; Linux Systeme</li></ul>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <img class="img-fluid" src="/images/gallery/startseite/laptop_schr.jpg" style="margin: auto;" /><br /><a class="btn btn-block btn-primary" style="float: right; top-margin:-2px;" type="button" href="">zum Reparaturservice</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-lg-12 text-danger">
+                <hr class="margin-top-1 margin-bottom-2" />
+                <h3>Ostern</h3>
+                Auch am Ostersamstag (31. März) haben wir für Sie geöffnet!
+            </div>
+            <div class="col-lg-12">
+                <hr class="margin-top-1 margin-bottom-2" />
+                <h3>Top-Artikel</h3>
 
-    <h1>My homepage</h1>
+            </div>
+            <hr class="margin-top-1 margin-bottom-2" />
+            <div class="col-xs-12 col-sm-4">
 
+                <h3>Öffnungszeiten</h3>
+                <strong>Montag</strong><br />Ruhetag<br><p><strong>Dienstag - Freitag</strong><br />10 Uhr - 14 Uhr<br />15 Uhr - 19 Uhr<br /><br /><strong>Samstag</strong><br />10 Uhr - 15 Uhr<br />&nbsp;</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <h3>Anschrift</h3>Ettlinger Str. 9<br />76137 Karlsruhe<br /><br />E-Mail:<br /><a href="mailto:info@notebookpartner.de">info@notebookpartner.de</a><br /><br />Tel.: 0721 1327545<br />Fax: 0721 1327546<br />
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <h3>Anfahrt</h3>Erschwerte Anfahrt wegen der Großbaustelle.<br />Bitte parken Sie im Parkhaus Kongresszentrum<br />oder Luisenstraße.<br />Wir erstatten Ihnen die Parkgebühren.<br /><br /><iframe frameborder="0" height="180" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.de/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=49.002045,8.403444&amp;hl=de&amp;geocode=&amp;sll=49.002176,8.403514&amp;sspn=0.002231,0.002368&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=49.002176,8.403514&amp;spn=0.002231,0.002368&amp;output=embed" width="100%"></iframe><br /><small><a href="https://maps.google.de/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=49.002045,8.403444&amp;hl=de&amp;geocode=&amp;sll=49.002176,8.403514&amp;sspn=0.002231,0.002368&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=49.002176,8.403514&amp;spn=0.002231,0.002368" style="float: right;text-align:left" target="_blank">Größere Kartenansicht</a></small><br /><br /><strong>Bus und Bahn</strong><br />Tram: Nr. 5, Nr. 6<br />Haltestelle Volkswohnung<br />Bus: Nr 10 (vom Bahnhof) - Haltestelle Kongresszentrum
+            </div>
+            <div class="col-xs-12 margin-bottom-2">
+                <hr class="margin-top-1 margin-bottom-2" />
+                notebookpartner.de ist auf den Vertrieb von gebrauchten Business Notebooks und Desktop Rechnern spezialisiert. Wir bieten ausschließlich professionelle Serien an, unter anderem IBM / Lenovo Thinkpad, Dell Latitude, Fujitsu Siemens Lifebook. Unsere Geräte stammen aus Leasingbeständen von Unternehmen und werden generalüberholt und geprüft. Da wir von der Qualität unserer Leasing-Rückläufer überzeugt sind, bieten wir unsere Notebooks mit 2 Jahren Garantie an. Auf vielen Notebooks ist Windows 7&nbsp; bereits installiert.<br />Sie finden uns entweder über unseren Online-Shop oder in unserem Ladengeschäft in der Karlsruher Südstadt. Dort können Sie auch defekte Notebooks oder Computer reparieren lassen.
+                <br />
+            </div>
+        </div>
+    </div>
 {% endblock %}
