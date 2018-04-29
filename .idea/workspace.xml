@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f19a02c-9028-44ab-874d-d3f6357855e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/PageDesign/Partials/Footer.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/PageDesign/Partials/Footer.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Item/Components/ItemImageCarousel.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Item/Components/ItemImageCarousel.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Item/Components/QuantityInput.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Item/Components/QuantityInput.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Item/Components/VariationSelect.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Item/Components/VariationSelect.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,15 +23,6 @@
               <folding>
                 <element signature="e#1932#2049#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemListView.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ItemList/ItemListView.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
@@ -75,11 +67,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryItem.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CategoryItem.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="726">
               <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleItem.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItem.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -124,10 +130,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="152" />
-    <option name="y" value="570" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -150,6 +155,12 @@
               <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
               <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -157,62 +168,7 @@
               <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Category" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Category" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Item" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Category" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Item" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Partials" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Homepage" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ItemList" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PageDesign" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PageDesign" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Partials" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PageDesign" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Partials" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Header" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -253,18 +209,17 @@
       <workItem from="1524992340155" duration="1116000" />
       <workItem from="1524994372731" duration="1145000" />
       <workItem from="1525009466980" duration="30000" />
-      <workItem from="1525014439902" duration="2122000" />
+      <workItem from="1525014439902" duration="2976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4413000" />
+    <option name="totallyTimeSpent" value="5267000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.50104386" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -465,6 +420,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItem.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
