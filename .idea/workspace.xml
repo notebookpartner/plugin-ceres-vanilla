@@ -16,8 +16,11 @@
       <file leaf-file-name="Homepage.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="51" column="113" selection-start-line="51" selection-start-column="113" selection-end-line="51" selection-end-column="113" />
+            <state relative-caret-position="719">
+              <caret line="77" column="294" selection-start-line="77" selection-start-column="294" selection-end-line="77" selection-end-column="294" />
+              <folding>
+                <element signature="e#1932#2049#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,7 +114,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="412" />
     <option name="y" value="-29" />
     <option name="width" value="1400" />
@@ -241,12 +244,12 @@
       <workItem from="1524992340155" duration="1116000" />
       <workItem from="1524994372731" duration="1145000" />
       <workItem from="1525009466980" duration="30000" />
-      <workItem from="1525014439902" duration="667000" />
+      <workItem from="1525014439902" duration="1260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2958000" />
+    <option name="totallyTimeSpent" value="3551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -284,6 +287,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+          <folding>
+            <element signature="e#1932#2049#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -438,8 +444,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="51" column="113" selection-start-line="51" selection-start-column="113" selection-end-line="51" selection-end-column="113" />
+        <state relative-caret-position="719">
+          <caret line="77" column="294" selection-start-line="77" selection-start-column="294" selection-end-line="77" selection-end-column="294" />
+          <folding>
+            <element signature="e#1932#2049#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
