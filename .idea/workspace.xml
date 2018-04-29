@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f19a02c-9028-44ab-874d-d3f6357855e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/PageDesign/Partials/Footer.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/PageDesign/Partials/Footer.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Homepage.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Homepage.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="719">
@@ -55,7 +56,14 @@
       </file>
       <file leaf-file-name="Footer.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/PageDesign/Partials/Footer.twig">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+              <folding>
+                <element signature="e#6632#6638#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="plugin.json" pinned="false" current-in-tab="false">
@@ -67,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryItem.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CategoryItem.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="111" column="95" selection-start-line="111" selection-start-column="92" selection-end-line="111" selection-end-column="95" />
+            <state relative-caret-position="726">
+              <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -79,8 +87,8 @@
       <file leaf-file-name="CategoryListItem.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="842">
-              <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
+            <state relative-caret-position="-838">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -101,10 +109,11 @@
       <list>
         <option value="$PROJECT_DIR$/resources/views/ItemList/ItemListView.twig" />
         <option value="$PROJECT_DIR$/resources/views/PageDesign/Partials/Header/Header.twig" />
-        <option value="$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig" />
         <option value="$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig" />
         <option value="$PROJECT_DIR$/plugin.json" />
         <option value="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" />
+        <option value="$PROJECT_DIR$/resources/views/PageDesign/Partials/Footer.twig" />
+        <option value="$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig" />
       </list>
     </option>
   </component>
@@ -114,9 +123,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="412" />
-    <option name="y" value="-29" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="152" />
+    <option name="y" value="570" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -244,12 +253,12 @@
       <workItem from="1524992340155" duration="1116000" />
       <workItem from="1524994372731" duration="1145000" />
       <workItem from="1525009466980" duration="30000" />
-      <workItem from="1525014439902" duration="1260000" />
+      <workItem from="1525014439902" duration="2122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3551000" />
+    <option name="totallyTimeSpent" value="4413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -425,23 +434,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/PageDesign/Partials/Head.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/PageDesign/Partials/Footer.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="111" column="95" selection-start-line="111" selection-start-column="92" selection-end-line="111" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="719">
@@ -449,6 +441,30 @@
           <folding>
             <element signature="e#1932#2049#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/PageDesign/Partials/Footer.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+          <folding>
+            <element signature="e#6632#6638#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-838">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
         </state>
       </provider>
     </entry>
