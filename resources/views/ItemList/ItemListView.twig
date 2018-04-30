@@ -23,8 +23,8 @@
                         <div class="list-wrapper">
                             <item-list-sorting template="#vue-item-list-sorting" :sorting-list="{{ searchOptions.sorting | json_encode }}" :default-sorting="{{ searchOptions.defaultSorting | json_encode }}"></item-list-sorting>
                             <items-per-page
-                                    template="#vue-items-per-page"
-                                    :pagination-values="{{ searchOptions.itemsPerPage | json_encode }}"></items-per-page>
+                                template="#vue-items-per-page"
+                                :pagination-values="{{ searchOptions.itemsPerPage | json_encode }}"></items-per-page>
                             <item-filter-list :facet-data="{{ facets | json_encode }}"></item-filter-list>
                         </div>
                     </div>
@@ -47,9 +47,9 @@
 
                 <div id="vue-rendered-item-list" class="item-list-frame">
                     <item-list
-                            :item-data="{{ itemList | json_encode }}"
-                            :total-items-data="{{ itemCountTotal }}"
-                            template="#vue-item-list">
+                        :item-data="{{ itemList | json_encode }}"
+                        :total-items-data="{{ itemCountTotal }}"
+                        template="#vue-item-list">
                     </item-list>
                 </div>
 
@@ -69,7 +69,7 @@
 {% endblock %}
 
 {% block PartialHead %}
-    <script type="application/ld+json">{"@context": "http://schema.org","@type": "WebSite","url": "{{ webstoreConfig.domainSsl }}","potentialAction":{"@type": "SearchAction","target": "{{ webstoreConfig.domainSsl }}/search?query={search_term}","query-input": "required name=search_term"}}</script>
+<script type="application/ld+json">{"@context": "http://schema.org","@type": "WebSite","url": "{{ webstoreConfig.domainSsl }}","potentialAction":{"@type": "SearchAction","target": "{{ webstoreConfig.domainSsl }}/search?query={search_term}","query-input": "required name=search_term"}}</script>
     {% if isSearch %}
         <title>{{ trans("Ceres::Template.generalSearchResults") }} {{ searchString }} | {{ ceresConfig.header.companyName }}</title>
     {% endif %}
