@@ -23,7 +23,7 @@
 
                 <li class="list-inline-item control-user">
                     <user-login-handler template="#vue-user-login-handler"
-                                        :user-data="{{ services.customer.getContact() | json_encode() }}"></user-login-handler>
+                            :user-data="{{ services.customer.getContact() | json_encode() }}"></user-login-handler>
                 </li>
                 <li class="list-inline-item dropdown control-languages">
                     <a class="" data-toggle="collapse" href="#countrySettings" aria-expanded="false"
@@ -33,23 +33,23 @@
                     </a>
                 </li>
                 {% if enableCurrencySelect == "true" %}
-                    <li class="list-inline-item dropdown control-languages">
-                        <a class=""
-                           data-toggle="collapse"
-                           href="#currencySelect"
-                           aria-expanded="false"
-                           aria-controls="currencySelect"
-                           data-parent="#controlsList">
-                            <span>{{ services.checkout.getCurrencyData()[currencyFormat] }}</span>
-                        </a>
-                    </li>
+                <li class="list-inline-item dropdown control-languages">
+                    <a class=""
+                       data-toggle="collapse"
+                       href="#currencySelect"
+                       aria-expanded="false"
+                       aria-controls="currencySelect"
+                       data-parent="#controlsList">
+                        <span>{{ services.checkout.getCurrencyData()[currencyFormat] }}</span>
+                    </a>
+                </li>
                 {% endif %}
                 <li class="list-inline-item control-search">
                     <a class="anicon anicon-search-xcross" aria-label="toggle search"
-                       data-toggle="collapse" href="#searchBox"
-                       aria-expanded="{% if services.template.isSearch() %}true{% else %}false{% endif %}"
-                       aria-controls="searchBox"
-                       data-parent="#controlsList">
+                            data-toggle="collapse" href="#searchBox"
+                            aria-expanded="{% if services.template.isSearch() %}true{% else %}false{% endif %}"
+                            aria-controls="searchBox"
+                            data-parent="#controlsList">
                         <span class="anicon-search-item" aria-hidden="true"></span>
                     </a>
                 </li>
@@ -76,8 +76,8 @@
 
                     {% if config("Ceres.basket.preview_type") != "right" %}
                         <basket-preview
-                                template="#vue-basket-preview-hover"
-                                :basket-data="{{ services.basket.getBasketForTemplate() | json_encode() }}">
+                            template="#vue-basket-preview-hover"
+                            :basket-data="{{ services.basket.getBasketForTemplate() | json_encode() }}">
                         </basket-preview>
                     {% endif %}
                 </li>
@@ -109,34 +109,34 @@
         </div>
 
         {% if enableCurrencySelect == "true" %}
-            <div id="currencySelect" class="cmp cmp-currency-select collapse">
-                <div class="container-max">
-                    <div class="currency-select-inner row">
+        <div id="currencySelect" class="cmp cmp-currency-select collapse">
+            <div class="container-max">
+                <div class="currency-select-inner row">
 
-                        <div class="currency-list col-xs-12">
-                            <div class="list-title">
-                                <strong>{{ trans("Ceres::Template.currency") }}</strong>
-                                <hr>
-                            </div>
-                            <ul>
-                                {% for currency in services.checkout.getCurrencyList() if currency.name in activeCurrencies or activeCurrencies[0] == 'all' or currency.name == services.checkout.getCurrencyData().name %}
-                                    <li{% if currency.name == services.checkout.getCurrencyData().name %} class="active"{% endif %}>
-                                        <a href="{{ queryString({"currency": currency.name}) }}" rel="nofollow">
-                                            {% if currencyFormatSelect == 'all' %}
-                                                {{ currency.name }} ({{ currency.symbol }})
-                                            {% else %}
-                                                {{ currency[currencyFormatSelect] }}
-                                            {% endif %}
-                                        </a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
+                    <div class="currency-list col-xs-12">
+                        <div class="list-title">
+                            <strong>{{ trans("Ceres::Template.currency") }}</strong>
+                            <hr>
                         </div>
+                        <ul>
+                            {% for currency in services.checkout.getCurrencyList() if currency.name in activeCurrencies or activeCurrencies[0] == 'all' or currency.name == services.checkout.getCurrencyData().name %}
+                            <li{% if currency.name == services.checkout.getCurrencyData().name %} class="active"{% endif %}>
+                                <a href="{{ queryString({"currency": currency.name}) }}" rel="nofollow">
+                                    {% if currencyFormatSelect == 'all' %}
+                                        {{ currency.name }} ({{ currency.symbol }})
+                                    {% else %}
+                                        {{ currency[currencyFormatSelect] }}
+                                    {% endif %}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
         {% endif %}
-
+        
         <shop-country-settings country-flag-prefix="flag-icon-" :localization-data="{{ services.localization.getLocalizationData() | json_encode }}">
             <div id="countrySettings" class="row cmp cmp-country-settings no-margin collapse">
                 <div class="container-max">
