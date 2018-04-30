@@ -159,7 +159,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
 
             $dispatcher->listen('IO.tpl.item', function (TemplateContainer $container)
             {
-                $container->setTemplate('CeresVanilla::Item.SingleItem');
+                $container->setTemplate('CeresVanilla::Item.SingleItemWrapper');
                 return false;
             }, self::PRIORITY);
         }
