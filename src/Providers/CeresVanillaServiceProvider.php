@@ -11,7 +11,8 @@ use Plenty\Plugin\Templates\Twig;
 use IO\Helper\TemplateContainer;
 use IO\Extensions\Functions\Partial;
 use Plenty\Plugin\ConfigRepository;
-
+/** for freitextfelder */
+use MyTheme\Extensions\MyExtension;
 
 /**
  * Class CeresVanillaServiceProvider
@@ -28,7 +29,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
 
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
     {
-
+        $twig->addExtension(TestTwigExtension::class);
         $enabledOverrides = explode(", ", $config->get("CeresVanilla.templates.override"));
 
         // Override partials
