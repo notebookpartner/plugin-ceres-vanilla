@@ -1,5 +1,5 @@
 {% extends getPartial('page-design') %}
-{% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
+{% import "CeresVanilla::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
 
 {% block PartialHead %}
     <meta name="description" content="{{ item.documents[0].data.texts.metaDescription }}">
@@ -18,6 +18,6 @@
 
 {% block PageBody %}
 
-    {% include [category_template( item.documents[0].data.item.add_cms_page, lang, webstoreConfig.webstoreId ), "Ceres::Item.SingleItemView"] %}
+    {% include [category_template( item.documents[0].data.item.add_cms_page, lang, webstoreConfig.webstoreId ), "CeresVanilla::Item.SingleItemView"] %}
 
 {% endblock %}
