@@ -4,22 +4,22 @@
 
 .produktbeschreibung {
     width:100%;
-    font-weight: bold;
+/*font-weight: bold;*/
 }
 .produktbeschreibung td,th{
-    padding: 4px 5px;
-    vertical-align: top;
+padding: 4px 5px;
+vertical-align: top;
 
 }
 .produktbeschreibung tr:nth-child(odd) {
-    background-color: #EFEFEF;
-    color: #000;
+background-color: #EFEFEF;
+color: #4d4f4d;
 }
 .produktbeschreibung tr:nth-child(even) {
-    background-color: #FEFEFE;
-    color: #000;
+background-color: #FEFEFE;
+color: #4d4f4d;
 }
 .produktbeschreibung tr:hover {
-    background-color: #32A4CA;
-    color: #fff;
+background-color: #32A4CA;
+color: #fff;
 }
