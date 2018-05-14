@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f19a02c-9028-44ab-874d-d3f6357855e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Item/SingleItemWrapper.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Item/SingleItemWrapper.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Item/SingleItemView.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Item/SingleItemView.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleItemWrapper.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SingleItemWrapper.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItemWrapper.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleItem.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SingleItem.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="171" column="48" selection-start-line="171" selection-start-column="48" selection-end-line="171" selection-end-column="48" />
+            <state relative-caret-position="289">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -95,9 +95,9 @@
         <option value="$PROJECT_DIR$/resources/css/main.css" />
         <option value="$PROJECT_DIR$/resources/views/Item/SingleItem.twig" />
         <option value="$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig" />
+        <option value="$PROJECT_DIR$/resources/views/Item/SingleItemWrapper.twig" />
         <option value="$PROJECT_DIR$/resources/views/Item/SingleItemView.twig" />
         <option value="$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig" />
-        <option value="$PROJECT_DIR$/resources/views/Item/SingleItemWrapper.twig" />
       </list>
     </option>
   </component>
@@ -267,12 +267,12 @@
       <workItem from="1525077161222" duration="4674000" />
       <workItem from="1525092889713" duration="6752000" />
       <workItem from="1525454403722" duration="659000" />
-      <workItem from="1526322598854" duration="111000" />
+      <workItem from="1526322598854" duration="1389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17501000" />
+    <option name="totallyTimeSpent" value="18779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -559,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItemView.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -580,17 +573,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="171" column="48" selection-start-line="171" selection-start-column="48" selection-end-line="171" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItemWrapper.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItemView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
         </state>
       </provider>
     </entry>
