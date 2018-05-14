@@ -23,14 +23,33 @@
                     <h1 class="h2 title">
                         <span>
                             ${ currentVariation.texts.name2 }
-                            {{ themeItem.free1 }}
                         </span>
                     </h1>
-
-                    {% if ('item.shortDescription' in itemData or 'all' in itemData)%}
                         <p class="single-description" v-if="currentVariation.texts.shortDescription !== ''" v-html="currentVariation.texts.shortDescription"></p>
-                    {% endif %}
 
+                        <table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
+                            <tbody><tr>
+                                <td>Prozessor:</td>
+                                <td>{{ themeItem.free1 }}</td>
+                            </tr>
+                            <tr>
+                                <td>Taktung:</td>
+                                <td>{{ themeItem.free2 }}</td>
+                            </tr>
+                            <tr>
+                                <td>Arbeitsspeicher: &nbsp; &nbsp;</td>
+                                <td>{{ themeItem.free3 }}</td>
+                            </tr>
+                            <tr>
+                                <td>Festplatte:</td>
+                                <td>{{ themeItem.free4 }}</td>
+                            </tr>
+                            <tr>
+                                <td>Display:</td>
+                                <td>{{ themeItem.free5 }} | {{ themeItem.free6 }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     <hr>
 
                     <div class="m-b-3">
