@@ -1,3 +1,25 @@
 .footer {
     margin-top: 18px !important;
 }
+
+.produktbeschreibung {
+    width:100%;
+    font-weight: bold;
+}
+.produktbeschreibung td,th{
+    padding: 4px 5px;
+    vertical-align: top;
+
+}
+.produktbeschreibung tr:nth-child(odd) {
+    background-color: #EFEFEF;
+    color: #000;
+}
+.produktbeschreibung tr:nth-child(even) {
+    background-color: #FEFEFE;
+    color: #000;
+}
+.produktbeschreibung tr:hover {
+    background-color: #32A4CA;
+    color: #fff;
+}
