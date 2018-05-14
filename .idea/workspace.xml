@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f19a02c-9028-44ab-874d-d3f6357855e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Providers/CeresVanillaServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/CeresVanillaServiceProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleItem.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SingleItem.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -70,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CeresVanillaServiceProvider.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CeresVanillaServiceProvider.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Providers/CeresVanillaServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            <state relative-caret-position="391">
+              <caret line="42" column="112" lean-forward="true" selection-start-line="42" selection-start-column="112" selection-end-line="42" selection-end-column="112" />
               <folding>
                 <element signature="e#42#84#0#PHP" expanded="true" />
               </folding>
@@ -130,8 +127,8 @@
         <option value="$PROJECT_DIR$/resources/css/main.css" />
         <option value="$PROJECT_DIR$/src/Contextes/CeresVanillaSingleItemContext.php" />
         <option value="$PROJECT_DIR$/src/Contexts/CeresVanillaSingleItemContext.php" />
-        <option value="$PROJECT_DIR$/src/Providers/CeresVanillaServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig" />
+        <option value="$PROJECT_DIR$/src/Providers/CeresVanillaServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -236,12 +233,12 @@
       <workItem from="1525092889713" duration="6752000" />
       <workItem from="1525454403722" duration="659000" />
       <workItem from="1526322598854" duration="4474000" />
-      <workItem from="1526329486190" duration="404000" />
+      <workItem from="1526329486190" duration="591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22268000" />
+    <option name="totallyTimeSpent" value="22455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -615,20 +612,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Providers/CeresVanillaServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="e#42#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Providers/CeresVanillaServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="42" column="112" lean-forward="true" selection-start-line="42" selection-start-column="112" selection-end-line="42" selection-end-column="112" />
+          <folding>
+            <element signature="e#42#84#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

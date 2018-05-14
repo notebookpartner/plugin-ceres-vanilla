@@ -29,7 +29,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
 
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
     {
-        $eventDispatcher->listen('IO.ctx.item', function (TemplateContainer $templateContainer, $templateData = [])
+        $dispatcher->listen('IO.ctx.item', function (TemplateContainer $templateContainer, $templateData = [])
         {
             $templateContainer->setContext( CeresVanillaSingleItemContext::class);
             return false;
