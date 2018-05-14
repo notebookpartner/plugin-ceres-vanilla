@@ -23,13 +23,3 @@ color: #4d4f4d;
 background-color: #32A4CA;
 color: #fff;
 }
-
-.navbar-brand img {
-
-    max-height: 80px;
-}
-
-.navbar .container-max .row {
-
-    height: 120px;
-}
