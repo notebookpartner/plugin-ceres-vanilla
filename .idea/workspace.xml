@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2f19a02c-9028-44ab-874d-d3f6357855e7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Item/SingleItemView.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Item/SingleItemView.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,8 +43,8 @@
       <file leaf-file-name="SingleItem.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="136">
+              <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -267,12 +266,12 @@
       <workItem from="1525077161222" duration="4674000" />
       <workItem from="1525092889713" duration="6752000" />
       <workItem from="1525454403722" duration="659000" />
-      <workItem from="1526322598854" duration="1389000" />
+      <workItem from="1526322598854" duration="2036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18779000" />
+    <option name="totallyTimeSpent" value="19426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -589,8 +588,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="136">
+          <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
         </state>
       </provider>
     </entry>
