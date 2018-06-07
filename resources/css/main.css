@@ -4,6 +4,32 @@
 .wrapper-main #page-body {
   margin-top: 118px; }
 
+.stay-top {
+  margin: 0;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  opacity: 0.5;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  border: 1px solid #282d2f;
+  background: #4d4f4d;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  text-align: center; }
+  .back-to-top:hover {
+    opacity: 1; }
+
+.stay-top i {
+  font-size: 29px;
+  color: #f7f7f9; }
+
+
 .produktbeschreibung {
     width:100%;
 /*font-weight: bold;*/
