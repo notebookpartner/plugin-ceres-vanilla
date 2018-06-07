@@ -7,13 +7,21 @@
 <nav class="navbar{% if useMegaMenu %} megamenu{%endif%}">
       <div class="container-max">
 		<div class="row">
-			 <a class="" href="/">
-				{% if ('http' in companyLogo) or ('layout/' in companyLogo) %}
-					<img alt="{{ companyName }}" src="{{ companyLogo }}" class="img-fluid"/>
-				{% else %}
-					<img alt="{{ companyName }}" src="{{ plugin_path('Ceres') }}/{{ companyLogo }}" class="img-fluid"/>
-				{% endif %}
-			 </a>
+			<div class="col-xs-7">
+				 <a class="" href="/">
+					{% if ('http' in companyLogo) or ('layout/' in companyLogo) %}
+						<img alt="{{ companyName }}" src="{{ companyLogo }}" class="img-fluid"/>
+					{% else %}
+						<img alt="{{ companyName }}" src="{{ plugin_path('Ceres') }}/{{ companyLogo }}" class="img-fluid"/>
+					{% endif %}
+				 </a>
+				<span class="hidden-sm hidden-xs hidden-md">
+					<img src="/images/gallery/banner/Stamp1.jpg" style="padding-top:10px;" align="right">
+					<img src="/images/gallery/banner/Stamp2.jpg" style="padding-top:10px;" align="right">
+					<a href="https://www.notebookpartner.de/info/garantiebedingungen/"><img src="/images/gallery/banner/Stamp3.jpg" style="padding-top:10px;" tiney="true" align="right"></a>
+				</span>
+			 </div>
+
 		</div>
         <div class="row">
              <div class="brand-wrapper" {% if showHeaderNavBar == "side" %}style="position: relative"{% endif %}>
