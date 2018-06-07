@@ -1,6 +1,8 @@
 .footer {
     margin-top: 18px !important;
 }
+.wrapper-main #page-body {
+  margin-top: 118px; }
 
 .produktbeschreibung {
     width:100%;
