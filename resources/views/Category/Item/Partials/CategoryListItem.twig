@@ -19,8 +19,7 @@
 
         <div class="thumb-background"></div>
 
-        <div class="thumb-image">
-            <div class="">
+        <div class="thumb-image col-xs-4">
                 <div class="main-image">
                     <category-image-carousel
                             template="#vue-category-image-carousel"
@@ -38,50 +37,10 @@
                         </a>
                     </noscript>
                 </div>
-            </div>
         </div>
 
-        <!-- STORE SPECIALS -->
-
-        {% if item.data.item.storeSpecial.id > 0 %}
-
-            {% set storeSpecial = item.data.item.storeSpecial.names.name %}
-
-            <div class="special-tags">
-                {% if  item.data.item.storeSpecial.id == 1 %}
-
-                    {% set storeSpecialColor = 'danger' %}
-                    {% set percent = 0 %}
-                    {% if item.data.prices.rrp is defined %}
-                        {% set percent = (1 - item.data.prices.default.unitPrice.value / item.data.prices.rrp.price.value ) * -100 %}
-                    {% endif %}
-
-                    {% if percent <= 0 %}
-                        {% set dezimalcount = ceresConfig.item.storeSpecial %}
-                        {% set percent = percent | number_format(dezimalcount, ',', '.') %}
-                        {% set storeSpecial = percent ~"%" %}
-                    {% endif %}
-
-                {% elseif  item.data.item.storeSpecial.id == 2 %}
-
-                    {% set storeSpecialColor = 'primary' %}
-
-                {% elseif  item.data.item.storeSpecial.id == 3 %}
-
-                    {% set storeSpecialColor = 'success' %}
-
-                {% endif %}
-
-                <span class="tag bg-{{ storeSpecialColor }}">
-                    {{ storeSpecial }}
-                </span>
-
-            </div>
-        {% endif %}
-        <!-- ./STORE SPECIALS -->
-
         <!-- ITEM DETAILS -->
-        <div class="thumb-content">
+        <div class="thumb-content col-xs-8">
             <a href="{{ itemUrl }}" class="thumb-title small">
                 {{ item.data | itemName }}
             </a>
@@ -138,6 +97,46 @@
                 </div>
             {% endif %} #}
         </div>
+		
         <!-- ./ITEM DETAILS  -->
+		
+		        <!-- STORE SPECIALS -->
+
+        {% if item.data.item.storeSpecial.id > 0 %}
+
+            {% set storeSpecial = item.data.item.storeSpecial.names.name %}
+
+            <div class="special-tags col-xs-12">
+                {% if  item.data.item.storeSpecial.id == 1 %}
+
+                    {% set storeSpecialColor = 'danger' %}
+                    {% set percent = 0 %}
+                    {% if item.data.prices.rrp is defined %}
+                        {% set percent = (1 - item.data.prices.default.unitPrice.value / item.data.prices.rrp.price.value ) * -100 %}
+                    {% endif %}
+
+                    {% if percent <= 0 %}
+                        {% set dezimalcount = ceresConfig.item.storeSpecial %}
+                        {% set percent = percent | number_format(dezimalcount, ',', '.') %}
+                        {% set storeSpecial = percent ~"%" %}
+                    {% endif %}
+
+                {% elseif  item.data.item.storeSpecial.id == 2 %}
+
+                    {% set storeSpecialColor = 'primary' %}
+
+                {% elseif  item.data.item.storeSpecial.id == 3 %}
+
+                    {% set storeSpecialColor = 'success' %}
+
+                {% endif %}
+
+                <span class="tag bg-{{ storeSpecialColor }}">
+                    {{ storeSpecial }}
+                </span>
+
+            </div>
+        {% endif %}
+        <!-- ./STORE SPECIALS -->
     </div>
 </article>
