@@ -31,6 +31,8 @@
 							:enable-carousel="{{ enableCarousel | json_encode }}">
 					</category-image-carousel>
 
+				</div>
+				<div class="col-xs-9">
 					<noscript>
 						<a href="{{ itemUrl }}">
 							<img class="img-fluid" src="{{ image.urlMiddle }}">
@@ -39,8 +41,6 @@
 					<a href="{{ itemUrl }}" class="thumb-title small">
 						{{ item.data | itemName }}
 					</a>
-				</div>
-				<div class="col-xs-9">
 					<div class="thumb-meta">
 						{{ LayoutContainer.show("Ceres::CategoryItem.BeforePrices", item.data) }}
 
