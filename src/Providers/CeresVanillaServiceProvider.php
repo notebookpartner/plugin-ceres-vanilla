@@ -12,7 +12,6 @@ use IO\Helper\TemplateContainer;
 use IO\Extensions\Functions\Partial;
 use Plenty\Plugin\ConfigRepository;
 use CeresVanilla\Contexts\CeresVanillaSingleItemContext;
-use CeresVanilla\Contexts\CeresVanillaCategoryItemContext;
 
 
 /**
@@ -35,12 +34,6 @@ class CeresVanillaServiceProvider extends ServiceProvider
             $templateContainer->setContext( CeresVanillaSingleItemContext::class);
             return false;
         }, 0);
-
- 	$dispatcher->listen('IO.ctx.item', function (TemplateContainer $templateContainer, $templateData = [])
-   	{
-       		$templateContainer->setContext( CeresVanillaCategoryItemContext::class);
-       		return false;
-   	}, 0);
 
         $enabledOverrides = explode(", ", $config->get("CeresVanilla.templates.override"));
 
