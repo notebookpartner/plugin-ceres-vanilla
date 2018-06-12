@@ -1,3 +1,7 @@
+.navbar-brand {
+  max-height: 7rem;
+}
+
 .footer {
     margin-top: 18px !important;
 }
