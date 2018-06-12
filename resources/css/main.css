@@ -9,6 +9,21 @@
     margin-top: 18px !important;
 }
 
+.center {
+    text-align: center;
+}
+
+.image-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.image-list > li {
+  display: inline-block;
+  margin: 2px 12px;
+  vertical-align: middle;
+}
+
 .wrapper-main #page-body {
   margin-top: 190px; 
 }
