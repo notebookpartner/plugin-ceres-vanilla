@@ -7,6 +7,7 @@
 A Vanilla theme for Ceres.
 
 
+
 ## Requirements
 
 This is a plugin for [plentymarkets 7](https://www.plentymarkets.com). This plugin is a theme for [Ceres](https://github.com/plentymarkets/plugin-io). The [IO](https://github.com/plentymarkets/plugin-ceres) plugin is required to run the plentymarkets **Ceres** plugin.
