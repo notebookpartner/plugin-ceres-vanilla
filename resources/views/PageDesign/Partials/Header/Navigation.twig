@@ -7,15 +7,8 @@
 <nav class="navbar{% if useMegaMenu %} megamenu{%endif%}">
       <div class="container-max">
 		<div class="row">
-			<div class="col-xs-12">
-				 <a class="stay-top" href="/">
-					{% if ('http' in companyLogo) or ('layout/' in companyLogo) %}
-						<img alt="{{ companyName }}" src="{{ companyLogo }}" class="img-fluid"/>
-					{% else %}
-						<img alt="{{ companyName }}" src="{{ plugin_path('Ceres') }}/{{ companyLogo }}" class="img-fluid"/>
-					{% endif %}
-				 </a>
-				<span class="d-none d-lg-block">
+			<div class="col-xs-12 d-none d-lg-block">
+				<span class="">
 					<img src="/images/gallery/banner/Stamp1.jpg" style="padding-top:10px;" align="right">
 					<img src="/images/gallery/banner/Stamp2.jpg" style="padding-top:10px;" align="right">
 					<a href="https://www.notebookpartner.de/info/garantiebedingungen/"><img src="/images/gallery/banner/Stamp3.jpg" style="padding-top:10px;" tiney="true" align="right"></a>
