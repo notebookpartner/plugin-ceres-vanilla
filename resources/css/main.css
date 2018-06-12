@@ -1,11 +1,18 @@
+.navbar-brand {
+  float: none;
+  padding: 0.5rem 0;
+  display: inline-block; }
   .navbar-brand img {
     max-height: 7rem; }
+
 
 .footer {
     margin-top: 18px !important;
 }
+
 .wrapper-main #page-body {
-  margin-top: 118px; }
+  margin-top: 118px; 
+}
 
 .stay-top {
   margin: 0;
@@ -25,7 +32,7 @@
   border-radius: 0.1rem;
   cursor: pointer;
   text-align: center; }
-  .back-to-top:hover {
+  .stay-top:hover {
     opacity: 1; }
 
 .stay-top i {
@@ -37,15 +44,17 @@
     width:100%;
 /*font-weight: bold;*/
 }
+
 .produktbeschreibung td,th{
 padding: 4px 5px;
 vertical-align: top;
-
 }
+
 .produktbeschreibung tr:nth-child(odd) {
 background-color: #EFEFEF;
 color: #4d4f4d;
 }
+
 .produktbeschreibung tr:nth-child(even) {
 background-color: #FEFEFE;
 color: #4d4f4d;
