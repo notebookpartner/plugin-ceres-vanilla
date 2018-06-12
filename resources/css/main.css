@@ -10,8 +10,16 @@
 }
 
 .wrapper-main #page-body {
-  margin-top: 180px; 
+  margin-top: 190px; 
 }
+
+@media (min-width: 992px) {
+  .wrapper-main > nav.container-max {
+    top: 164px; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+        .wrapper-main .breadcrumb {
+          padding: 0.5rem 0; } }
+
 
 .stay-top {
   margin: 0;
