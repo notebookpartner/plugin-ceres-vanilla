@@ -1,6 +1,11 @@
+.footer-info div {
+  padding: 20px 15px 15px 15px;  
+}
+
 .footer-lower{
   margin-top: 18px !important;
   background-color: #f2f2f2;
+  padding: 20px 15px 15px 15px;
 }
 .navbar-brand {
   float: none;
