@@ -54,7 +54,7 @@
 
                     <div class="m-b-3">
                         <span class="articlenumber small text-muted">
-                            <b>{{ trans("Ceres::Template.itemNumber") }}</b>
+                            <b>{{ trans("Ceres::Template.singleitemNumber") }}</b>
                             <span>${ currentVariation.variation.number }</span>
                         </span>
                     </div>
@@ -151,7 +151,7 @@
                 <div class="col-md-7 m-y-3">
                     <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item" v-if="isDescriptionTabActive">
-                                <a class="nav-link active" data-toggle="tab" :href="'#details-' +  currentVariation.variation.id" role="tab">{{ trans("Ceres::Template.itemDescription") }}</a>
+                                <a class="nav-link active" data-toggle="tab" :href="'#details-' +  currentVariation.variation.id" role="tab">{{ trans("Ceres::Template.singleItemDescription") }}</a>
                             </li>
                     </ul>
 
