@@ -12,6 +12,7 @@ use IO\Helper\TemplateContainer;
 use IO\Extensions\Functions\Partial;
 use Plenty\Plugin\ConfigRepository;
 use CeresVanilla\Contexts\CeresVanillaSingleItemContext;
+use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 
 
 /**
@@ -33,6 +34,12 @@ class CeresVanillaServiceProvider extends ServiceProvider
         {
             $templateContainer->setContext( CeresVanillaSingleItemContext::class);
             return false;
+        }, 0);
+        
+        $eventDispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) 
+        {
+            $templateContainer->setTemplates([ ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'CeresVanilla::ResultFields.SingleItem'
+            ]);
         }, 0);
 
         $enabledOverrides = explode(", ", $config->get("CeresVanilla.templates.override"));
