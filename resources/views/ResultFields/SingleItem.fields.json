@@ -31,6 +31,10 @@
     "variation.availability.id",
     "variation.releasedAt",
     "variation.mayShowUnitPrice",
+    
+    "variationProperties.*";
+    
+    "variationPropertyGroups.*";
 
     "texts.*",
 
