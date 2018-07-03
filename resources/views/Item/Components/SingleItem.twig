@@ -50,7 +50,7 @@
                             </tr>
 			    <tr>
 			    	<td>VarA</td>
-				<td>{{currentVariation.variationProperties| json_encode() }}</td>
+				<td>{{currentVariation.variationProperties[0].id | raw }}</td>
 			    </tr>
                             </tbody>
                         </table>
