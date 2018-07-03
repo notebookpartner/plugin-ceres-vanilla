@@ -49,12 +49,8 @@
                                 <td>{{ themeItem.free6 }} | {{ themeItem.free7 }}</td>
                             </tr>
 			    <tr>
-			    	<td>Var</td>
-				<td>{{currentVariation.variationProperties[0].id }}</td>
-			    </tr>
-			    			    <tr>
-			    	<td>Vara</td>
-				<td>{{currentVariation.variationProperties[1].id }}</td>
+			    	<td>VarA</td>
+				<td>{{currentVariation.variationProperties| json_encode() }}</td>
 			    </tr>
                             </tbody>
                         </table>
