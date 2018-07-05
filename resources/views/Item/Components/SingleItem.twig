@@ -23,7 +23,7 @@
                     <h1 class="h2 title">
                         <span>
                             ${ currentVariation.texts.name2 }
-currentVariation                        </span>
+	                </span>
                     </h1>
                         <p class="single-description" v-if="currentVariation.texts.shortDescription !== ''" v-html="currentVariation.texts.shortDescription"></p>
 
@@ -50,11 +50,11 @@ currentVariation                        </span>
                             </tr>
 			    <tr>
 			    	<td>Eigenschaften RAM</td>
-				<td> ${currentVariation.variationProperties[0].property.names.name } </td>
+				<td> ${ currentVariation.variationProperties[0].property.names.name } </td>
 			    </tr>
 			    <tr>
 			    	<td>Eigenschaften CPU</td>
-				<td> ${currentVariation.variationProperties[1].property.names.name } </td>
+				<td> ${ currentVariation.variationProperties[1].property.names.name } </td>
 			    </tr>
                             </tbody>
                         </table>
