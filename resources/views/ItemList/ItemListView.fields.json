@@ -39,5 +39,7 @@
   "variation.releasedAt",
   "variation.mayShowUnitPrice",
   "filter.hasChildren",
-  "filter.isSalable"
+  "filter.isSalable",
+  "variationProperties.*",
+  "variationPropertyGroups.*"
 ]
