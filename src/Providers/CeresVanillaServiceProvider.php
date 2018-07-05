@@ -40,6 +40,9 @@ class CeresVanillaServiceProvider extends ServiceProvider
         {
             $templateContainer->setTemplates([ ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'CeresVanilla::ResultFields.SingleItem'
             ]);
+            $templateContainer->setTemplates([ ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'CeresVanilla::ResultFields.ListItem'
+            ]);
+            
         }, 0);
 
         $enabledOverrides = explode(", ", $config->get("CeresVanilla.templates.override"));
