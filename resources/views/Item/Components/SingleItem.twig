@@ -23,7 +23,7 @@
                     <h1 class="h2 title">
                         <span>
                             ${ currentVariation.texts.name2 }
-                        </span>
+currentVariation                        </span>
                     </h1>
                         <p class="single-description" v-if="currentVariation.texts.shortDescription !== ''" v-html="currentVariation.texts.shortDescription"></p>
 
@@ -50,7 +50,7 @@
                             </tr>
 			    <tr>
 			    	<td>VarB</td>
-				<td> ${currentVariation | json_encode()} </td>
+				<td> ${currentVariation.variationProperties[0] | json_encode()} </td>
 			    </tr>
                             </tbody>
                         </table>
