@@ -32,9 +32,9 @@
     "variation.releasedAt",
     "variation.mayShowUnitPrice",
     
-    "variationProperties.*";
+    "variationProperties.*",
     
-    "variationPropertyGroups.*";
+    "variationPropertyGroups.*",
 
     "texts.*",
 
