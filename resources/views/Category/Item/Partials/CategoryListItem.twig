@@ -62,7 +62,7 @@
 							</tr>							
 							<tr>
 								<td>VarA:</td>
-								<td> ${ currentVariation.variationProperties[0].property.names.name } </td>
+								<td> {{ item | json_encode()  }} </td>
 							</tr>
 							</tbody>
 						</table>
