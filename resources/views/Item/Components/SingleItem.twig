@@ -103,12 +103,12 @@
 
                     <div class="base-price text-muted m-y-1" v-if="currentVariation.unit && !(currentVariation.unit.unitOfMeasurement === 'C62' && currentVariation.unit.content === 1)">
                         <div>
-                            {{ trans("Ceres::Template.itemContent") }}
+                            {{ trans("Ceres::Template.singleItemContent") }}
                             <span>${ currentVariation.unit.content | numberFormat }</span>
                             <span>${ currentVariation.unit.names.name }</span>
                         </div>
                         <div v-if="currentVariation.variation.mayShowUnitPrice">
-                            {{ trans("Ceres::Template.itemUnitPrice") }}
+                            {{ trans("Ceres::Template.singleItemUnitPrice") }}
                             <span class="base-price-value">
                                 ${ variationGraduatedPrice.basePrice }
                             </span>
@@ -147,8 +147,8 @@
                     <hr>
 
                     <span class="vat small text-muted">
-                        * {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.itemExclVAT") }}{% else %}{{ trans("Ceres::Template.itemInclVAT") }}{% endif %} {{ trans("Ceres::Template.itemExclusive") }}
-                        <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.itemShippingCosts") }}">{{ trans("Ceres::Template.itemShippingCosts") }}</a>
+                        * {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
+                        <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.singleItemShippingCosts") }}">{{ trans("Ceres::Template.singleItemShippingCosts") }}</a>
                     </span>
 
                     <slot name="AdditionalContentAfterVAT"></slot>
