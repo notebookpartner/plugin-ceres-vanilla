@@ -41,29 +41,25 @@
 					<a href="{{ itemUrl }}" class="thumb-title small">
 						<table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
 							<tbody><tr>
-								<td>Prozessor:</td>
-								<td>{{ themeItem.free1 }}</td>
+								<td>Prozessor: {{ item.data.variationProperties[0].property.groups[0].names.name }}</td>
+								<td>{{ item.data.variationProperties[0]values.value }}</td>
 							</tr>
 							<tr>
-								<td>Taktung:</td>
-								<td>{{ themeItem.free2 }}</td>
+								<td>Taktung: {{ item.data.variationProperties[1].property.groups[0].names.name }}</td>
+								<td>{{ item.data.variationProperties[1]values.value }}</td>
 							</tr>
 							<tr>
-								<td>Arbeitsspeicher: &nbsp; &nbsp;</td>
-								<td>{{ themeItem.free5 }}</td>
+								<td>Arbeitsspeicher: {{ item.data.variationProperties[2].property.groups[0].names.name }}</td>
+								<td>{{ item.data.variationProperties[2]values.value }}</td>
 							</tr>
 							<tr>
-								<td>Festplatte:</td>
-								<td>{{ themeItem.free4 }}</td>
+								<td>Festplatte: {{ item.data.variationProperties[3].property.groups[0].names.name }}</td>
+								<td>{{ item.data.variationProperties[3]values.value }}</td>
 							</tr>
 							<tr>
-								<td>Display:</td>
-								<td>{{ themeItem.free6 }} | {{ themeItem.free7 }}</td>
+								<td>Display: {{ item.data.variationProperties[4].property.groups[0].names.name }}</td>
+								<td>{{ item.data.variationProperties[4]values.value }} | {{ themeItem.free7 }}</td>
 							</tr>							
-							<tr>
-								<td>VarA:</td>
-								<td> {{ item |json_encode()  }} </td>
-							</tr>
 							<tr>
 								<td>VarB:</td>
 								<td>
