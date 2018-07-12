@@ -43,10 +43,12 @@
 							<tbody>
 							<tr>
 								<td>VarB:</td>
+								{% if item.data.variationProperties[0] is defined %}
 								<td>
-									idvp: {{ item.data.variationProperties | json_encode() }}
+									idvp: {{ item.data.variationProperties[0].values.value }}
 								</td>
 								</tr>
+								{% endif %}
 							</tbody>
 						</table>
 					</a>
