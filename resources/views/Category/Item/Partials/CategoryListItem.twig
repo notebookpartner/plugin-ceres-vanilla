@@ -43,31 +43,31 @@
 							<tbody>
 								{% if item.data.variationProperties[0] is defined %}
 									<tr>
-										<td>Prozessor: {{ item.data.variationProperties[0].property.groups[0].names.name }}</td>
-										<td>{{ item.data.variationProperties[0].property.names.name }}</td>
+										<td>{{ item.data.variationProperties[1].property.groups[0].names.name }}</td>
+										<td>{{ item.data.variationProperties[1].property.names.name }}</td>
 									</tr>
 								{% endif %}
 								{% if item.data.variationProperties[1] is defined %}
 									<tr>
-										<td>Taktung: {{ item.data.variationProperties[1].property.groups[0].names.name }}</td>
-										<td>{{ item.data.variationProperties[1].property.names.name }}</td>
+										<td>{{ item.data.variationProperties[0].property.groups[0].names.name }}</td>
+										<td>{{ item.data.variationProperties[0].property.names.name }}</td>
 									</tr>
 								{% endif %}
 								{% if item.data.variationProperties[2] is defined %}
 									<tr>
-										<td>Arbeitsspeicher: {{ item.data.variationProperties[2].property.groups[0].names.name }}</td>
+										<td>{{ item.data.variationProperties[2].property.groups[0].names.name }}</td>
 										<td>{{ item.data.variationProperties[2].property.names.name }}</td>
 									</tr>
 								{% endif %}
 								{% if item.data.variationProperties[3] is defined %}
 									<tr>
-										<td>Festplatte: {{ item.data.variationProperties[3].property.groups[0].names.name }}</td>
+										<td>{{ item.data.variationProperties[3].property.groups[0].names.name }}</td>
 										<td>{{ item.data.variationProperties[3].property.names.name }}</td>
 									</tr>
 								{% endif %}
 								{% if item.data.variationProperties[4] is defined %}
 									<tr>
-										<td>Display: {{ item.data.variationProperties[4].property.groups[0].names.name }}</td>
+										<td>{{ item.data.variationProperties[4].property.groups[0].names.name }}</td>
 										<td>{{ item.data.variationProperties[4].property.names.name }}</td>
 									</tr>
 								{% endif %}	
