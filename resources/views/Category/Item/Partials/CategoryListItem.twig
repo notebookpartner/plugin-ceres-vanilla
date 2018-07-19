@@ -52,7 +52,7 @@
 									<td>---------</td>
 								</tr>
 								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == Prozessor %}
+									{% if properties.property.groups[0].names.name == "Prozessor" %}
 									<tr>
 										<td> {{ properties.property.groups[0].names.name }}</td>
 										<td> {{ properties.property.names.name }}</td>
