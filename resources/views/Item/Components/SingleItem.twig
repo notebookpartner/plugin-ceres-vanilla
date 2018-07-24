@@ -53,6 +53,9 @@
 				<td> ${ currentVariation.variationProperties[0].property.names.name } </td>
 			    </tr>
 			    {% for properties in currentVariation.variationProperties %}
+			    						<tr>
+										<td>{{ properties.property.groups[0].names.name }}</td>
+									</tr>
 									{% if properties.property.groups[0].names.name == "Prozessor" %}
 									<tr>
 										<td> {{ properties.property.groups[0].names.name }}</td>
