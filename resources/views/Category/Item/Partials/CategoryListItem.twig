@@ -39,6 +39,7 @@
 						</a>
 					</noscript>          
 					<a href="{{ itemUrl }}" class="thumb-title small">
+						<h3>{{ item.data | json_encode() }}</h3>
 						<table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
 							<tbody>
 								{% for properties in item.data.variationProperties %}
