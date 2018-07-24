@@ -133,7 +133,7 @@
 
 					</div>
 				</div>
-			</div>
+			
             <add-to-basket
                     :item="{{ item.data | json_encode() }}"
                     item-url="{{ itemUrl }}">
@@ -143,7 +143,7 @@
                 * {{ trans("Ceres::Template.itemInclVAT") }} {{ trans("Ceres::Template.itemExclusive") }}
                 <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.itemShippingCosts") }}">{{ trans("Ceres::Template.itemShippingCosts") }}</a>
             </span>
-
+	</div>
 
             {# {% if tags > 0 %}
                 <div class="m-t-1 tag-list">
