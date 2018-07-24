@@ -131,6 +131,10 @@
 								{% endif %}
 							</div>
 						{% endif %}
+						            <span class="vat-porto-info small text-muted">
+                * {{ trans("Ceres::Template.itemInclVAT") }} {{ trans("Ceres::Template.itemExclusive") }}
+                <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.itemShippingCosts") }}">{{ trans("Ceres::Template.itemShippingCosts") }}</a>
+            </span>
 
 					</div>
 				</div>
@@ -139,11 +143,6 @@
                     :item="{{ item.data | json_encode() }}"
                     item-url="{{ itemUrl }}">
             </add-to-basket>
-
-            <span class="vat-porto-info small text-muted">
-                * {{ trans("Ceres::Template.itemInclVAT") }} {{ trans("Ceres::Template.itemExclusive") }}
-                <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.itemShippingCosts") }}">{{ trans("Ceres::Template.itemShippingCosts") }}</a>
-            </span>
 	</div>
 
             {# {% if tags > 0 %}
