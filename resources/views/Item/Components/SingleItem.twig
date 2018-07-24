@@ -52,10 +52,6 @@
 			    	<td>Eigenschaften RAM</td>
 				<td> ${ currentVariation.variationProperties[0].property.names.name } </td>
 			    </tr>
-			    <tr>
-			    	<td>Eigenschaften CPU</td>
-				<td> ${ currentVariation.variationProperties[1].property.names.name } </td>
-			    </tr>
 			    {% for properties in currentVariation.variationProperties %}
 									{% if properties.property.groups[0].names.name == "Prozessor" %}
 									<tr>
