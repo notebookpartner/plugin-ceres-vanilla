@@ -18,7 +18,7 @@
         {% endif %}
 
         <ul class="product-list row grid">
-            <li v-for="item in items" :key="item.data.variation.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-{% if (showHeaderNavBar == "side" or showHeaderNavBar == "both") and not services.template.isSearch() %}4{% else %}3{% endif %}">
+            <li v-for="item in items" :key="item.data.variation.id" class="col-xs-12">
                 <category-item :item-data="item.data" decimal-count="{{ decimalCount }}" image-url-accessor="urlMiddle"></category-item>
             </li>
         </ul>
