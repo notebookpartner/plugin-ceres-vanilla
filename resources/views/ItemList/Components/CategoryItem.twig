@@ -34,15 +34,16 @@
                     </div>
                 </div>
             </div>
-    </div>
-    <div class="col-xs-9">
-
+            
             <!-- STORE SPECIALS -->
             <item-store-special v-if="storeSpecial" :store-special="storeSpecial"
                                 :recommended-retail-price="itemData.prices.rrp"
                                 :variation-retail-price="itemData.prices.default"
                                 :decimal-count="decimalCount"></item-store-special>
             <!-- ./STORE SPECIALS -->
+    </div>
+    <div class="col-xs-9">
+
 
             <!-- ITEM DETAILS -->
             <div class="thumb-content">
