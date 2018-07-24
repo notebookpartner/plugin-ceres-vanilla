@@ -63,13 +63,13 @@
 					<td> {{ properties.property.groups[0].names.name }}</td>
 					<td> {{ properties.property.names.name }}</td>
 				</tr>
+			    </div>
 			    <div v-for="properties in currentVariation.variationProperties ">
 			    	<tr v-if="properties.property.groups[0].names.name == 'Festplatte'">
 					<td> {{ properties.property.groups[0].names.name }}</td>
 					<td> {{ properties.property.names.name }}</td>
 				</tr>
-				{% endif %}
-			{% endfor %}
+				</div>
 			{% for properties in item.data.variationProperties %}
 				{% if properties.property.groups[0].names.name == "Speichertyp" %}
 				<tr>
