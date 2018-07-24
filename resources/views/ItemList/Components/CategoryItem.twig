@@ -50,66 +50,34 @@
             <div class="thumb-content">
                 <a :href="itemData | itemURL" class="thumb-title small">
                     <h3> ${ itemData.texts.name2 } </h3>
-                    <table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
-							<tbody>
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Prozessor" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Arbeitsspeicher" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Festplatte" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Speichertyp" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Displaygröße" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Betriebssystem" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Garantie" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-									
-							</tbody>
+		    <table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
+                          <tbody>
+				<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Prozessor'">
+					<td> ${ properties.property.groups[0].names.name }</td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+			    	<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Arbeitsspeicher'">
+					<td> ${ properties.property.groups[0].names.name }</td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+			    	<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Festplatte'">
+					<td> ${ properties.property.groups[0].names.name }</td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+				<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Speichertyp'">
+					<td> ${ properties.property.groups[0].names.name }</td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+				<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Displaygröße'">
+					<td> ${ properties.property.groups[0].names.name }</td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+				<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Betriebssystem'">
+					<td> ${ properties.property.groups[0].names.name }</td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+                            </tbody>
+                        </table>
                     </table>
                 </a>
                 <div class="thumb-meta">
