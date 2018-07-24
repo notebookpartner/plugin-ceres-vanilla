@@ -32,15 +32,16 @@
                                                  ref="categoryImageCarousel">
                         </category-image-carousel>
                     </div>
-                </div>
-            </div>
-            
-            <!-- STORE SPECIALS -->
+                </div>           
+                <!-- STORE SPECIALS -->
             <item-store-special v-if="storeSpecial" :store-special="storeSpecial"
                                 :recommended-retail-price="itemData.prices.rrp"
                                 :variation-retail-price="itemData.prices.default"
                                 :decimal-count="decimalCount"></item-store-special>
             <!-- ./STORE SPECIALS -->
+            </div>
+            
+ 
     </div>
     <div class="col-xs-9">
 
@@ -48,7 +49,7 @@
             <!-- ITEM DETAILS -->
             <div class="thumb-content">
                 <a :href="itemData | itemURL" class="thumb-title small">
-                    ${ itemData.texts.name2 }
+                    <h3> ${ itemData.texts.name2 } </h3>
                 </a>
                 <div class="thumb-meta">
                     <div class="prices">
