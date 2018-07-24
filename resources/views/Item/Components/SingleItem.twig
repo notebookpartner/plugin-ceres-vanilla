@@ -53,59 +53,55 @@
 				<td> ${ currentVariation.variationProperties[0].property.names.name } </td>
 			    </tr>
 			    <div v-for="properties in currentVariation.variationProperties ">
-									<tr v-if="properties.property.groups[0].names.name == 'Prozessor'">
-										<td> ${ properties.property.groups[0].names.name }</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									</div>
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Arbeitsspeicher" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Festplatte" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Speichertyp" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Displaygröße" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Betriebssystem" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
-								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Garantie" %}
-									<tr>
-										<td> {{ properties.property.groups[0].names.name }}</td>
-										<td> {{ properties.property.names.name }}</td>
-									</tr>
-									{% endif %}
-								{% endfor %}
+				<tr v-if="properties.property.groups[0].names.name == 'Prozessor'">
+					<td> ${ properties.property.groups[0].names.name }</td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+				</div>
+			    <div v-for="properties in currentVariation.variationProperties ">
+			    	<tr v-if="properties.property.groups[0].names.name == 'Arbeitsspeicher'">
+					<td> {{ properties.property.groups[0].names.name }}</td>
+					<td> {{ properties.property.names.name }}</td>
+				</tr>
+			    <div v-for="properties in currentVariation.variationProperties ">
+			    	<tr v-if="properties.property.groups[0].names.name == 'Festplatte'">
+					<td> {{ properties.property.groups[0].names.name }}</td>
+					<td> {{ properties.property.names.name }}</td>
+				</tr>
+				{% endif %}
+			{% endfor %}
+			{% for properties in item.data.variationProperties %}
+				{% if properties.property.groups[0].names.name == "Speichertyp" %}
+				<tr>
+					<td> {{ properties.property.groups[0].names.name }}</td>
+					<td> {{ properties.property.names.name }}</td>
+				</tr>
+				{% endif %}
+			{% endfor %}
+			{% for properties in item.data.variationProperties %}
+				{% if properties.property.groups[0].names.name == "Displaygröße" %}
+				<tr>
+					<td> {{ properties.property.groups[0].names.name }}</td>
+					<td> {{ properties.property.names.name }}</td>
+				</tr>
+				{% endif %}
+			{% endfor %}
+			{% for properties in item.data.variationProperties %}
+				{% if properties.property.groups[0].names.name == "Betriebssystem" %}
+				<tr>
+					<td> {{ properties.property.groups[0].names.name }}</td>
+					<td> {{ properties.property.names.name }}</td>
+				</tr>
+				{% endif %}
+			{% endfor %}
+			{% for properties in item.data.variationProperties %}
+				{% if properties.property.groups[0].names.name == "Garantie" %}
+				<tr>
+					<td> {{ properties.property.groups[0].names.name }}</td>
+					<td> {{ properties.property.names.name }}</td>
+				</tr>
+				{% endif %}
+			{% endfor %}
                             </tbody>
                         </table>
                     <hr>
