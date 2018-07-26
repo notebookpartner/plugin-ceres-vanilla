@@ -21,6 +21,9 @@
         <div class="thumb-content">
 			<div class="row">
 				<div class="col-xs-3">
+				            <div class="thumb-image">
+                <div class="square-container">
+                    <div class="square-inner main-image">
 					<category-image-carousel
 							template="#vue-category-image-carousel"
 							:image-urls-data="{{ item.data.images | json_encode() }} | itemImages('urlMiddle')"
@@ -30,6 +33,9 @@
 							:show-nav="{{ ceresConfig.item.categoryShowNav | json_encode }}"
 							:enable-carousel="{{ enableCarousel | json_encode }}">
 					</category-image-carousel>
+					</div>
+					</div>
+					</div>
 
 				</div>
 				<div class="col-xs-9">
