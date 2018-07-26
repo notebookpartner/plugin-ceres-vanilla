@@ -122,7 +122,7 @@
 							{% endif %}
 
 							<div class="price">
-								{{ item.data.prices.default.unitPrice.formatted }} *
+								{{ item.data.prices.default.unitPrice.formatted }} 
 							</div>
 						</div>
 
@@ -138,8 +138,8 @@
 								{% endif %}
 							</div>
 						{% endif %}
-						            <span class="vat-porto-info small text-muted">
-                * {{ trans("Ceres::Template.itemInclVAT") }} {{ trans("Ceres::Template.itemExclusive") }}
+						            <span class="vat small text-muted">
+                {{ trans("Ceres::Template.itemInclVAT") }} {{ trans("Ceres::Template.itemExclusive") }}
                 <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.itemShippingCosts") }}">{{ trans("Ceres::Template.itemShippingCosts") }}</a>
             </span>
 
