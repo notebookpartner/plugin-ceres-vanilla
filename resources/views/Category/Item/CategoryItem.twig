@@ -90,6 +90,13 @@
                     <div class="sidebar-categories">
                         <div class="category-title">Filter</div>
                         Filterkomponenten
+                        <div class="list-wrapper">
+                            <item-list-sorting template="#vue-item-list-sorting" :sorting-list="{{ searchOptions.sorting | json_encode }}" :default-sorting="{{ searchOptions.defaultSorting | json_encode }}"></item-list-sorting>
+                            <items-per-page
+                                    template="#vue-items-per-page"
+                                    :pagination-values="{{ searchOptions.itemsPerPage | json_encode }}"></items-per-page>
+                            <item-filter-list :facet-data="{{ facets | json_encode }}"></item-filter-list>
+                        </div>
                     </div>
 
                     {{ LayoutContainer.show("Ceres::CategoryItem.SideNavBarBottom") }}
