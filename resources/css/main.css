@@ -1,3 +1,11 @@
+.cmp-product-thumb .price {
+ color:#7a7f7f;
+ line-height:1.1;
+ font-weight:700;
+ font-size:1.4rem;
+ min-height:21px
+}
+
 .footer-info div {
   padding: 12px 15px 7px 15px;  
 }
