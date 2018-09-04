@@ -28,6 +28,20 @@
       		</div>
 	    {% endif %}
     </div>
+    <div slot="CrossSellingSimilar">{% if similar|length > 0 %}
+        		<div class="crossSelling">
+        			<span class="h3">Das passt dazu:</span>
+        			<container-item-list :items="null"></container-item-list>
+      		</div>
+	    {% endif %}
+    </div>
+    <div slot="CrossSellingCollection">{% if collection|length > 0 %}
+        		<div class="crossSelling">
+        			<span class="h3">Das passt dazu:</span>
+        			<container-item-list :items="null"></container-item-list>
+      		</div>
+	    {% endif %}
+    </div>
 
 
 </single-item>
