@@ -38,16 +38,6 @@ class CeresVanillaSingleItemContext extends SingleItemContext implements Context
       	    $searchfactory->setPage(1, 4); // Begrenze auf 4 Artikel
         	$result = pluginApp(ItemSearchService::class)->getResult($searchfactory);
         	$this->similar= $result['documents'];
-		
-        $options = array(
-              "itemId" => $this->item['documents'][0]['data']['item']['id'],
-              "relation" => "Collection"      // Nutze die Liste Paket
-            );
-            $searchfactory = CrossSellingItems::getSearchFactory( $options );
-      	    $searchfactory->setPage(1, 4); // Begrenze auf 4 Artikel
-        	$result = pluginApp(ItemSearchService::class)->getResult($searchfactory);
-        	$this->collection= $result['documents'];
-	}
-    
+    }
 }
 ?>
