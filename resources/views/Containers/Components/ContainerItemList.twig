@@ -9,7 +9,7 @@
                 <category-item v-for="(item, index) in items" :ref="'categoryItem_' + index" :key="item.data.variation.id" :item-data="item.data" decimal-count="{{ decimalCount | json_encode }}" image-url-accessor="urlMiddle"></category-item>
             </div>
         </div>
-        <div v-else v-for="item in items" :key="item.data.variation.id" class="col-xs-12 col-lg-12">
+        <div class="col-xs-12 col-lg-12" v-else v-for="item in items" :key="item.data.variation.id" >
             <category-item :item-data="item.data" decimal-count="{{ decimalCount }}" image-url-accessor="urlMiddle"></category-item>
         </div>
     </div>
