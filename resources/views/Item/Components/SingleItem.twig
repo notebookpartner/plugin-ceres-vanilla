@@ -111,7 +111,12 @@
                             </span>
                         </div>
                     </div>
+		    <span class="vat small text-muted">
+                        {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
+                        <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.singleItemShippingCosts") }}">{{ trans("Ceres::Template.singleItemShippingCosts") }}</a>
+                    </span>
 
+                    <slot name="AdditionalContentAfterVAT"></slot>
                     <slot name="AfterPrice"></slot>
 				<!--
                     <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
@@ -142,13 +147,6 @@
                     <slot name="AdditionalContentAfterAddToBasket"></slot>
 
                     <hr>
-
-                    <span class="vat small text-muted">
-                        {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
-                        <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.singleItemShippingCosts") }}">{{ trans("Ceres::Template.singleItemShippingCosts") }}</a>
-                    </span>
-
-                    <slot name="AdditionalContentAfterVAT"></slot>
 
                 </div>
 
