@@ -23,14 +23,14 @@
     <div slot="FeedbackContainer">{{ LayoutContainer.show("Ceres::SingleItem.FeedbackContainer", item) }}</div>
     <div slot="CrossSellingAccessory">{% if accessory|length > 0 %}
         		<div class="crossSelling">
-        			<span class="h3">Das passt dazu:</span>
+        			<span class="h3">Zubehör:</span>
         			<container-item-list :items="null"></container-item-list>
       		</div>
 	    {% endif %}
     </div>
     <div slot="CrossSellingSimilar">{% if similar|length > 0 %}
         		<div class="crossSelling">
-        			<span class="h3">Das passt dazu:</span>
+        			<span class="h3">Ähnliches Produkt:</span>
         			<container-item-list :items="null"></container-item-list>
       		</div>
 	    {% endif %}
