@@ -13,7 +13,6 @@ class CeresVanillaSingleItemContext extends SingleItemContext implements Context
     public $themeItem;
     public $accessory;
     public $similar;
-    public $collection;
 
     public function init($params)
     {
