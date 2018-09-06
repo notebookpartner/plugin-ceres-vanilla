@@ -87,11 +87,8 @@
             </div>
                 <div class="col-xs-3 hidden-md-down">
                     <div class="sidebar-categories">
-                        <div class="category-title">Filter</div>
-                        Filterkomponenten
-                        <div class="list-wrapper">
-                            <item-filter-list :facet-data="{{ facets | json_encode }}"></item-filter-list>
-                        </div>
+                        <div class="category-title">Filter</div>                        
+                        <item-filter-list :facet-data="{{ facets | json_encode }}"></item-filter-list>                  
                     </div>
 
                     {{ LayoutContainer.show("Ceres::CategoryItem.SideNavBarBottom") }}
