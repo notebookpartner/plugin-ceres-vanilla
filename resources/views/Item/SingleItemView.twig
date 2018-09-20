@@ -21,19 +21,21 @@
     <template slot="AddDetailTabsContent">{{ LayoutContainer.show("CeresVanilla::SingleItem.AddDetailTabsContent", item.documents[0].data) }}</template>
     <div slot="ItemListContainer">{{ LayoutContainer.show("Ceres::SingleItem.ItemListContainer", item) }}</div>
     <div slot="FeedbackContainer">{{ LayoutContainer.show("Ceres::SingleItem.FeedbackContainer", item) }}</div>
-    <div slot="CrossSellingAccessory">{% if accessory|length > 0 %}
+    <div slot="CrossSellingAccessory">
+    	{% if accessory|length > 0 %}
         		<div class="crossSelling">
         			<span class="h3">Zubehör:</span>
-        			<container-item-list :items="null"></container-item-list>
+        			<container-item-list :items={{ accessory| json_encode }}></container-item-list>
       		</div>
-	    {% endif %}
+	{% endif %}
     </div>
-    <div slot="CrossSellingSimilar">{% if similar|length > 0 %}
+    <div slot="CrossSellingSimilar">
+    	{% if similar|length > 0 %}
         		<div class="crossSelling">
         			<span class="h3">Ähnliches Produkt:</span>
-        			<container-item-list :items="null"></container-item-list>
+        			<container-item-list :items={{ similar| json_encode }}></container-item-list>
       		</div>
-	    {% endif %}
+	{% endif %}
     </div>
 
 
