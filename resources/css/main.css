@@ -36,6 +36,10 @@
   }
 }
 
+.wrapper-main #page-body {
+  margin-top: 90px; 
+}
+
 .cmp-product-thumb .price {
  color:#7a7f7f;
  line-height:1.1;
