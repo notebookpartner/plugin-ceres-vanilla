@@ -17,7 +17,7 @@
 
 {% set headerContainer = LayoutContainer.show("CeresVanilla::Header") | trim %}
 {% if headerContainer is empty %}
-    {% include "Ceres::PageDesign.Partials.Header.DefaultHeader" %}
+    {% include "CeresVanilla::PageDesign.Partials.Header.DefaultHeader" %}
 {% else %}
 <header id="page-header" class="pos-f-t">
     {{ headerContainer | raw }}
