@@ -13,6 +13,7 @@ class CeresVanillaSingleItemContext extends SingleItemContext implements Context
     public $themeItem;
     public $accessory;
     public $similar;
+    public $paket;
 
     public function init($params)
     {
@@ -20,6 +21,15 @@ class CeresVanillaSingleItemContext extends SingleItemContext implements Context
         $itemRep =  pluginApp(ItemRepositoryContract::class);
         $this->themeItem= $itemRep->show($this->item['documents'][0]['data']['item']['id']);
 
+        $options = array(
+        			"itemId" => $this->item['documents'][0]['data']['item']['id'],
+        			"relation" => "Collection"      // Nutze die Liste Zubehoer
+       		);
+     		$searchfactory = CrossSellingItems::getSearchFactory( $options );
+     		$searchfactory->setPage(1, 4); // Begrenze auf 4 Artikel
+      		$result = pluginApp(ItemSearchService::class)->getResult($searchfactory);
+      		$this->paket = $result['documents'];
+        
         $options = array(
         			"itemId" => $this->item['documents'][0]['data']['item']['id'],
         			"relation" => "Accessory"      // Nutze die Liste Zubehoer
