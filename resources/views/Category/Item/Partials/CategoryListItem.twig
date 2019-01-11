@@ -113,7 +113,7 @@
 						{{ LayoutContainer.show("Ceres::CategoryItem.BeforePrices", item.data) }}
 
 						<div class="prices">
-							{% if not item.data.prices.rrp is defined and item.data.prices.rrp.price.value != 0 %}
+							{% if item.data.prices.rrp is not defined or item.data.prices.rrp.price.value == 0 %}
 								<div class="price">
 									{{ item.data.prices.default.unitPrice.formatted }} 
 								</div>
