@@ -112,7 +112,7 @@
 					<div class="thumb-meta">
 						{{ LayoutContainer.show("Ceres::CategoryItem.BeforePrices", item.data) }}
 
-						<div class="prices">
+						<div class="">
 							{% if item.data.prices.rrp.price.value == 0 or not (item.data.prices.rrp is defined)%}
 								<div class="price">
 									{{ item.data.prices.default.unitPrice.formatted }} 
@@ -124,7 +124,6 @@
 										{{ item.data.prices.rrp.price.formatted }}
 									</del>
 								</div>
-								<br />
 								<div class="price text-success">
 									{{ item.data.prices.default.unitPrice.formatted }} 
 								</div>
