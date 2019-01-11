@@ -6,170 +6,175 @@
 
 <script type="x/template" id="vue-single-item">
     <div>
-        <div class="single container-max page-content">
-            <div class="row m-t-3">
-                <div class="col-md-5 single-leftside">
-                    <div class="row">
-                        <div class="col-xs-12">
-                        	<slot name="ImageCarousel"></slot>
-                        </div>
-                    </div>
-                </div>
+	<div class="single container-max page-content">
+		<div class="col-md-8">
+		    <div class="row m-t-3">
+			<div class="col-md-5 single-leftside">
+			    <div class="row">
+				<div class="col-xs-12">
+					<slot name="ImageCarousel"></slot>
+				</div>
+			    </div>
+			</div>
 
-                <!-- ITEM DETAIL -->
-                <div class="col-md-7 m-t-1" >
-                    <div class="producertag h6 producer text-muted" v-if="currentVariation.filter.hasManufacturer">
-                        ${ currentVariation.item.manufacturer.externalName }
-                    </div>
+			<!-- ITEM DETAIL -->
+			<div class="col-md-7 m-t-1" >
+			    <div class="producertag h6 producer text-muted" v-if="currentVariation.filter.hasManufacturer">
+				${ currentVariation.item.manufacturer.externalName }
+			    </div>
 
-                    <h1 class="h2 title">
-                        <span>
-                            ${ currentVariation.texts.name2 }
-	                </span>
-                    </h1>
-                        <table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
-                            <tbody>
-				<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Prozessor'">
-					<td> ${ properties.property.groups[0].names.name }</td>
-					<td> ${ properties.property.names.name }</td>
-				</tr>
-			    	<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Arbeitsspeicher'">
-					<td> ${ properties.property.groups[0].names.name }</td>
-					<td> ${ properties.property.names.name }</td>
-				</tr>
-			    	<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Festplatte'">
-					<td> ${ properties.property.groups[0].names.name }</td>
-					<td> ${ properties.property.names.name }</td>
-				</tr>
-				<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Speichertyp'">
-					<td> ${ properties.property.groups[0].names.name }</td>
-					<td> ${ properties.property.names.name }</td>
-				</tr>
-				<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Displaygröße'">
-					<td> ${ properties.property.groups[0].names.name }</td>
-					<td> ${ properties.property.names.name }</td>
-				</tr>
-				<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Betriebssystem'">
-					<td> ${ properties.property.groups[0].names.name }</td>
-					<td> ${ properties.property.names.name }</td>
-				</tr>
-                            </tbody>
-                        </table>
-                    <hr width="50%" align="left">
+			    <h1 class="h2 title">
+				<span>
+				    ${ currentVariation.texts.name2 }
+				</span>
+			    </h1>
+				<table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
+				    <tbody>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Prozessor'">
+						<td> ${ properties.property.groups[0].names.name }</td>
+						<td> ${ properties.property.names.name }</td>
+					</tr>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Arbeitsspeicher'">
+						<td> ${ properties.property.groups[0].names.name }</td>
+						<td> ${ properties.property.names.name }</td>
+					</tr>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Festplatte'">
+						<td> ${ properties.property.groups[0].names.name }</td>
+						<td> ${ properties.property.names.name }</td>
+					</tr>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Speichertyp'">
+						<td> ${ properties.property.groups[0].names.name }</td>
+						<td> ${ properties.property.names.name }</td>
+					</tr>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Displaygröße'">
+						<td> ${ properties.property.groups[0].names.name }</td>
+						<td> ${ properties.property.names.name }</td>
+					</tr>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Betriebssystem'">
+						<td> ${ properties.property.groups[0].names.name }</td>
+						<td> ${ properties.property.names.name }</td>
+					</tr>
+				    </tbody>
+				</table>
+			    <hr width="50%" align="left">
 
-                    <div class="m-b-3">
-                        <span class="articlenumber small text-muted">
-                            <b>{{ trans("Ceres::Template.singleItemNumber") }}</b>
-                            <span>${ currentVariation.variation.number }</span>
-                        </span>
-                    </div>
+			    <div class="m-b-3">
+				<span class="articlenumber small text-muted">
+				    <b>{{ trans("Ceres::Template.singleItemNumber") }}</b>
+				    <span>${ currentVariation.variation.number }</span>
+				</span>
+			    </div>
 
-                    <!-- Variation -->
-                    <div class="row m-b-1" v-if="variations.length > 0">
-                        <variation-select template="#vue-variation-select" :attributes="attributeNameMap" :variations="variations" :preselect="currentVariation.variation.id" @is-valid-change="isVariationSelected = $event"></variation-select>
-                    </div>
-                    <!-- /Variation -->
+			    <!-- Variation -->
+			    <div class="row m-b-1" v-if="variations.length > 0">
+				<variation-select template="#vue-variation-select" :attributes="attributeNameMap" :variations="variations" :preselect="currentVariation.variation.id" @is-valid-change="isVariationSelected = $event"></variation-select>
+			    </div>
+			    <!-- /Variation -->
 
-                    <slot name="BeforePrice"></slot>
+			    <slot name="BeforePrice"></slot>
 
-                    <!-- <div class="row">
-                        <order-properties template="#vue-order-properties" v-if="currentVariation.filter.isSalable"></order-properties>
-                    </div> -->
+			    <!-- <div class="row">
+				<order-properties template="#vue-order-properties" v-if="currentVariation.filter.isSalable"></order-properties>
+			    </div> -->
 
-                    <div class="row" v-if="currentVariation.filter.isSalable && variationGroupedProperties.length">
-                        <order-property-list></order-property-list>
-                    </div>
+			    <div class="row" v-if="currentVariation.filter.isSalable && variationGroupedProperties.length">
+				<order-property-list></order-property-list>
+			    </div>
 
-                    <graduated-prices template="#vue-graduated-prices"></graduated-prices>
+			    <graduated-prices template="#vue-graduated-prices"></graduated-prices>
 
-                    {% if ('item.recommendedPrice' in itemData or 'all' in itemData) %}
-                        <div class="crossprice" v-if="currentVariation.prices.rrp && currentVariation.prices.rrp.price.value > 0">
-                            <del class="text-muted small">
-                                ${ currentVariation.prices.rrp.price.formatted }
-                            </del>
-                        </div>
-                    {% endif %}
+			    {% if ('item.recommendedPrice' in itemData or 'all' in itemData) %}
+				<div class="crossprice" v-if="currentVariation.prices.rrp && currentVariation.prices.rrp.price.value > 0">
+				    <del class="text-muted small">
+					${ currentVariation.prices.rrp.price.formatted }
+				    </del>
+				</div>
+			    {% endif %}
 
-                    <span class="price h1">
-                        <span ref="variationTotalPrice" :content="currentVariation.prices.default.price.value">
-                            ${ variationTotalPrice | currency(currentVariation.prices.default.currency) }
-                        </span>
-                        <sup></sup>
-                        <span :content="currentVariation.prices.default.currency"></span>
-                    </span>
+			    <span class="price h1">
+				<span ref="variationTotalPrice" :content="currentVariation.prices.default.price.value">
+				    ${ variationTotalPrice | currency(currentVariation.prices.default.currency) }
+				</span>
+				<sup></sup>
+				<span :content="currentVariation.prices.default.currency"></span>
+			    </span>
 
-                    <div class="base-price text-muted m-y-1" v-if="currentVariation.unit && !(currentVariation.unit.unitOfMeasurement === 'C62' && currentVariation.unit.content === 1)">
-                        <div>
-                            {{ trans("Ceres::Template.singleItemContent") }}
-                            <span>${ currentVariation.unit.content | numberFormat }</span>
-                            <span>${ currentVariation.unit.names.name }</span>
-                        </div>
-                        <div v-if="currentVariation.variation.mayShowUnitPrice">
-                            {{ trans("Ceres::Template.singleItemUnitPrice") }}
-                            <span class="base-price-value">
-                                ${ variationGraduatedPrice.basePrice }
-                            </span>
-                        </div>
-                    </div>
-		    <span class="vat small text-muted">
-                        {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
-                        <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.singleItemShippingCosts") }}">{{ trans("Ceres::Template.singleItemShippingCosts") }}</a>
-                    </span>
+			    <div class="base-price text-muted m-y-1" v-if="currentVariation.unit && !(currentVariation.unit.unitOfMeasurement === 'C62' && currentVariation.unit.content === 1)">
+				<div>
+				    {{ trans("Ceres::Template.singleItemContent") }}
+				    <span>${ currentVariation.unit.content | numberFormat }</span>
+				    <span>${ currentVariation.unit.names.name }</span>
+				</div>
+				<div v-if="currentVariation.variation.mayShowUnitPrice">
+				    {{ trans("Ceres::Template.singleItemUnitPrice") }}
+				    <span class="base-price-value">
+					${ variationGraduatedPrice.basePrice }
+				    </span>
+				</div>
+			    </div>
+			    <span class="vat small text-muted">
+				{% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
+				<a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.singleItemShippingCosts") }}">{{ trans("Ceres::Template.singleItemShippingCosts") }}</a>
+			    </span>
 
-                    <slot name="AdditionalContentAfterVAT"></slot>
-                    <slot name="AfterPrice"></slot>
-				<!--
-                    <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
-                        <span>
-                             ${ currentVariation.variation.availability.names.name } 
-                        </span>
-                    </span>
-				-->
-                    <div class="row m-y-1">
-                        <slot name="BeforeAddToBasket"></slot>
-				{{ AddToBasket.printVueComponent(
-                            "currentVariation",
-                            false,
-                            true,
-                            {
-                                ":missing-order-properties":"variationMissingProperties",
-                                ":is-variation-selected": "isVariationSelected && currentVariation.filter.isSalable"
-                            }
-                        ) }}
-                        <slot name="AfterAddToBasket"></slot>
-                    </div>
+			    <slot name="AdditionalContentAfterVAT"></slot>
+			    <slot name="AfterPrice"></slot>
+					<!--
+			    <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
+				<span>
+				     ${ currentVariation.variation.availability.names.name } 
+				</span>
+			    </span>
+					-->
+			    <div class="row m-y-1">
+				<slot name="BeforeAddToBasket"></slot>
+					{{ AddToBasket.printVueComponent(
+				    "currentVariation",
+				    false,
+				    true,
+				    {
+					":missing-order-properties":"variationMissingProperties",
+					":is-variation-selected": "isVariationSelected && currentVariation.filter.isSalable"
+				    }
+				) }}
+				<slot name="AfterAddToBasket"></slot>
+			    </div>
 
-                    {% if "wish-list" in enabledRoutes or "all" in enabledRoutes %}
-                        <div class="row">
-                            <add-to-wish-list :variation-id="currentVariation.variation.id"></add-to-wish-list>
-                        </div>
-                    {% endif %}
-                <!-- ./ITEM DETAIL -->
+			    {% if "wish-list" in enabledRoutes or "all" in enabledRoutes %}
+				<div class="row">
+				    <add-to-wish-list :variation-id="currentVariation.variation.id"></add-to-wish-list>
+				</div>
+			    {% endif %}
+			<!-- ./ITEM DETAIL -->
 
-                    <slot name="AdditionalContentAfterAddToBasket"></slot>	
-                </div>
+			    <slot name="AdditionalContentAfterAddToBasket"></slot>	
+			</div>
 
-                <!-- ITEM DESCRIPTION -->
-                <div class="col-md-12 m-y-3">
-                    <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item" v-if="isDescriptionTabActive">
-                                <a class="nav-link active" data-toggle="tab" :href="'#details-' +  currentVariation.variation.id" role="tab">{{ trans("Ceres::Template.singleItemDescription") }}</a>
-                            </li>
-                    </ul>
+			<!-- ITEM DESCRIPTION -->
+			<div class="col-md-12 m-y-3">
+			    <ul class="nav nav-tabs" role="tablist">
+				    <li class="nav-item" v-if="isDescriptionTabActive">
+					<a class="nav-link active" data-toggle="tab" :href="'#details-' +  currentVariation.variation.id" role="tab">{{ trans("Ceres::Template.singleItemDescription") }}</a>
+				    </li>
+			    </ul>
 
-                    <div class="tab-content">
-                            <div class="tab-pane active" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
-                                <div class="m-y-2" v-html="currentVariation.texts.description">
-                                </div>
-                            </div>
-                        <slot name="AddDetailTabsContent"></slot>
-                    </div>
-                </div>
-            </div>
-            <!-- ./ITEM DESCRIPTION -->
-	        <slot name="CrossSellingAccessory"></slot>
-	    	<slot name="CrossSellingSimilar"></slot>
-		<slot name="CrossSellingPaket"></slot>
-        </div>
+			    <div class="tab-content">
+				    <div class="tab-pane active" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
+					<div class="m-y-2" v-html="currentVariation.texts.description">
+					</div>
+				    </div>
+				<slot name="AddDetailTabsContent"></slot>
+			    </div>
+			</div>
+		    </div>
+		    <!-- ./ITEM DESCRIPTION -->
+			<slot name="CrossSellingAccessory"></slot>
+			<slot name="CrossSellingSimilar"></slot>
+			<slot name="CrossSellingPaket"></slot>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	  	<p>Hier Rechts leiste</p>
+	  </div>
     </div>
 </script>
