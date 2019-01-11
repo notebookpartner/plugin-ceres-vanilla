@@ -14,6 +14,7 @@ class CeresVanillaSingleItemContext extends SingleItemContext implements Context
     public $accessory;
     public $similar;
     public $paket;
+    public $replacement;
 
     public function init($params)
     {
@@ -23,7 +24,7 @@ class CeresVanillaSingleItemContext extends SingleItemContext implements Context
 
         $options = array(
         			"itemId" => $this->item['documents'][0]['data']['item']['id'],
-        			"relation" => "Collection"      // Nutze die Liste Zubehoer
+        			"relation" => "Bundle"      // Nutze die Liste Paket
        		);
      		$searchfactory = CrossSellingItems::getSearchFactory( $options );
      		$searchfactory->setPage(1, 4); // Begrenze auf 4 Artikel
