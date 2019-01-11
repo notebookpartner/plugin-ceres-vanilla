@@ -31,7 +31,7 @@
         {% endif %}
     </div>
     <div slot="CrossSellingAccessory">
-	{{ component("Ceres::Containers.Components.ContainerItemList") }}
+	{{ component("CeresVanilla::Containers.Components.ContainerItemListXS") }}
 	{% if accessory|length > 0 %}
         		<div class="crossSelling">
         			<span class="h3">Dieses Zubehör passt für das Produkt:</span>
@@ -40,7 +40,7 @@
 	{% endif %}
     </div>
         <div slot="CrossSellingSimilar">
-	{{ component("Ceres::Containers.Components.ContainerItemList") }}
+	{{ component("CeresVanilla::Containers.Components.ContainerItemListXS") }}
 	{% if accessory|length > 0 %}
         		<div class="crossSelling">
         			<span class="h3">Ähnliche Produkte:</span>
@@ -49,7 +49,7 @@
 	{% endif %}
 </div>
     <div slot="CrossSellingPaket">
-	{{ component("Ceres::Containers.Components.ContainerItemList") }}
+	{{ component("CeresVanilla::Containers.Components.ContainerItemListXS") }}
 	{% if accessory|length > 0 %}
         		<div class="crossSelling">
         			<span class="h3">Diese Upgrades können wir für das Produkt anbieten:</span>
