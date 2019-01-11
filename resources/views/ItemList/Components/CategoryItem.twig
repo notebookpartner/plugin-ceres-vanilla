@@ -81,17 +81,17 @@
                     </table>
                 </a>
                 <div class="thumb-meta">
-                    <div class="prices">
+                    <div class="">
                         <div v-if="itemData.prices.rrp && itemData.prices.rrp.price.value > 0" class="">
                             <del class="crossprice">
                                 ${ itemData.prices.rrp.price.formatted }
                             </del>
                         </div>
 
-                        <div v-if="itemData.prices.rrp && itemData.prices.rrp.price.value > 0" class="price">
+                        <div v-if="itemData.prices.rrp && itemData.prices.rrp.price.value > 0" class="price text-success">
                             ${ itemData.prices.default.unitPrice.formatted }
                         </div>
-			 <div v-else class="price text-success">
+			 <div v-else class="price">
                             ${ itemData.prices.default.unitPrice.formatted }
                         </div>
 			
