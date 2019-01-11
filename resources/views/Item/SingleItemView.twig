@@ -39,4 +39,22 @@
       		</div>
 	{% endif %}
     </div>
+        <div slot="CrossSellingSimilar">
+	{{ component("Ceres::Containers.Components.ContainerItemList") }}
+	{% if accessory|length > 0 %}
+        		<div class="crossSelling">
+        			<span class="h3">Das passt dazu:</span>
+        			<container-item-list :items="{{ similar| json_encode }}"></container-item-list>
+      		</div>
+	{% endif %}
+</div>
+    <div slot="CrossSellingPaket">
+	{{ component("Ceres::Containers.Components.ContainerItemList") }}
+	{% if accessory|length > 0 %}
+        		<div class="crossSelling">
+        			<span class="h3">Das passt dazu:</span>
+        			<container-item-list :items="{{ paket| json_encode }}"></container-item-list>
+      		</div>
+	{% endif %}
+</div>
 </single-item>
