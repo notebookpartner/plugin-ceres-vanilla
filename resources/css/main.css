@@ -45,14 +45,6 @@
   margin-top: 100px; 
 }
 
-@media (min-width: 992px) {
-  .wrapper-main > nav.container-max {
-    top: 164px; } }
-  @media (min-width: 1200px) and (min-width: 1200px) {
-        .wrapper-main .breadcrumb {
-          padding: 0.5rem 0; } }
-
-
 .stay-top {
   margin: 0;
   position: fixed;
