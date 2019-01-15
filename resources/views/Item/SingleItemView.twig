@@ -34,7 +34,7 @@
 	{{ component("CeresVanilla::Containers.Components.ContainerItemListXS") }}
 	{% if accessory|length > 0 %}
         		<div class="crossSelling">
-        			<span class="h3">Dieses Zubehör passt für das Produkt:</span>
+        			<span class="h3" style="padding-bottom: 13px;">Dieses Zubehör passt für das Produkt:</span>
         			<container-item-list :items="{{ accessory| json_encode }}"></container-item-list>
       		</div>
 	{% endif %}
@@ -43,7 +43,7 @@
 	{{ component("CeresVanilla::Containers.Components.ContainerItemListXS") }}
 	{% if accessory|length > 0 %}
         		<div class="crossSelling">
-        			<span class="h3">Ähnliche Produkte:</span>
+        			<span class="h3" style="padding-bottom: 15px;">Ähnliche Produkte:</span>
         			<container-item-list :items="{{ similar| json_encode }}"></container-item-list>
       		</div>
 	{% endif %}
@@ -52,7 +52,7 @@
 	{{ component("CeresVanilla::Containers.Components.ContainerItemListXS") }}
 	{% if accessory|length > 0 %}
         		<div class="crossSelling">
-        			<span class="h3">Diese Upgrades können wir für das Produkt anbieten:</span>
+        			<span class="h3" style="padding-bottom: 17px;">Diese Upgrades können wir für das Produkt anbieten:</span>
         			<container-item-list :items="{{ paket| json_encode }}"></container-item-list>
       		</div>
 	{% endif %}
