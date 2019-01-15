@@ -6,6 +6,7 @@
     <div>
         <div class="col-xs-12 col-lg-12" v-if="items.length > 4">
             <div class="list-item-carousel owl-carousel owl-theme owl-single-item" ref="carouselContainer">
+                <p>ContainerItemListXS</p>
                 <category-item v-for="(item, index) in items" :ref="'categoryItem_' + index" :key="item.data.variation.id" :item-data="item.data" decimal-count="{{ decimalCount | json_encode }}" image-url-accessor="urlMiddle"></category-item>
             </div>
         </div>
