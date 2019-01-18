@@ -114,7 +114,7 @@
 
 						<div class="">
 							{% if item.data.prices.rrp.price.value == 0 or not (item.data.prices.rrp is defined)%}
-								<div class="price">
+								<div class="price ListItemTwig">
 									{{ item.data.prices.default.unitPrice.formatted }} 
 								</div>
 							{% endif %}
