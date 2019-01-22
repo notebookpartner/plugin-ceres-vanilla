@@ -3,6 +3,12 @@
     max-height: 7rem; }
 }
 
+}
+h1,h2,h3,h4,h5,h6 {
+ margin-top:1.1rem;
+ margin-bottom:.5rem
+}
+
 .cmp-product-thumb .price {
  color:#7a7f7f;
  line-height:1.1;
