@@ -1,3 +1,4 @@
+
 .cmp-product-thumb .price {
  color:#7a7f7f;
  line-height:1.1;
@@ -15,12 +16,6 @@
   background-color: #f2f2f2;
   padding: 20px 15px 15px 15px;
 }
-.navbar-brand {
-  float: none;
-  padding: 0.5rem 0;
-  display: inline-block; }
-  .navbar-brand img {
-    max-height: 7rem; }
 
 .footer {
     margin-top: 18px !important;
