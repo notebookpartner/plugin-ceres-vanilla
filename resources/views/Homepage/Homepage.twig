@@ -91,6 +91,7 @@
                 {{ LayoutContainer.show("Ceres::Homepage.Container7") }}
             <div class="container-max home-cross m-b-3">
                 {% set itemList3 = services.itemList.getItemList( "tag_list", "3", "variation.position_desc",99 ).documents %}
+                {{ itemList3 }}
                 <div class="section-header m-b-1">
                     <h2>Sonderangebote</h2>
                 </div>
@@ -99,15 +100,6 @@
                         <container-item-list template="#vue-strese-container-item-list" :items="{{ itemList3 | json_encode }}"></container-item-list>
                     </div>
                 {% endif %}
-                <div slot="CrossSellingAccessory">
-                    {{ component("CeresVanilla::Containers.Components.ContainerItemListXS") }}
-                    {% if top|length > 0 %}
-                        <div class="crossSelling">
-                            <p class="h3" style="margin-bottom: 12px;">Dieses Zubehör passt für das Produkt:</p>
-                            <container-item-list :items="{{ top| json_encode }}"></container-item-list>
-                        </div>
-                    {% endif %}
-                </div>
             </div>
             </div>
             <hr class="margin-top-1 margin-bottom-2" />
