@@ -19,10 +19,9 @@
         <div class="thumb-inner">
             <add-to-basket :item="itemData" :use-large-scale="true" :item-url="itemData | itemURL"></add-to-basket>
 <div class="row">
-                {% if isHome or isItem %}
+
+                {% if isHome or (services.template.getCurrentTemplate() == 'tpl.home') %}
                        <div class="col-xs-12">
-		{% endif %}
-		
 		{% else %}
                        <div class="col-xs-12 col-md-3">
 		{% endif %}
