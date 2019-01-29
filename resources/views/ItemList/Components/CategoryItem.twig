@@ -19,10 +19,11 @@
         <div class="thumb-inner">
             <add-to-basket :item="itemData" :use-large-scale="true" :item-url="itemData | itemURL"></add-to-basket>
 <div class="row">
-                {% if isHome %}
+                {% if isHome or isItem%}
                        <div class="col-xs-12">
 		{% endif %}
-		{% if not isHome %}
+		
+		{% if not (isHome orisItem)%}
                        <div class="col-xs-12 col-md-3">
 		{% endif %}
     
