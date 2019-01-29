@@ -51,7 +51,7 @@
             
  
     </div>
-                {% if isHome or services.template.getCurrentTemplate() == 'tpl.home' %}
+                {% if isHome or (services.template.getCurrentTemplate() == 'tpl.home') %}
                        <div class="col-xs-12">
 		{% else %}
                        <div class="col-xs-12 col-md-9">
