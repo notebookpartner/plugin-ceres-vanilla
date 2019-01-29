@@ -171,7 +171,7 @@ Vue.component("item-image-carousel", {
         initThumbCarousel()
         {
             $(this.$refs.thumbs).owlCarousel({
-                autoHeight       : true,
+                autoHeight       : false,
                 dots             : false,
                 items            : 5,
                 lazyLoad         : true,
