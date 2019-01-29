@@ -4,6 +4,7 @@
 
 {% set lang = services.sessionStorage.getLang() %}
 {% set shippingCat = config("Ceres.global.shippingCostsCategoryId") %}
+{% set isHome = services.template.isHome() %}
 
 {% if enableCarousel is not defined %}
     {% if config("Ceres.item.enable_image_carousel") == "true" %}
@@ -18,7 +19,13 @@
         <div class="thumb-inner">
             <add-to-basket :item="itemData" :use-large-scale="true" :item-url="itemData | itemURL"></add-to-basket>
 <div class="row">
-    <div class="col-xs-12 col-md-3">
+                {% if isHome %}
+                       <div class="col-xs-12">
+		{% endif %}
+		{% if not isHome %}
+                       <div class="col-xs-12 col-md-3">
+		{% endif %}
+    
             <div class="thumb-image">
                 <div class="square-container">
                     <div class="square-inner main-image">
@@ -43,7 +50,12 @@
             
  
     </div>
-    <div class="col-xs-12 col-md-9">
+                {% if isHome %}
+                       <div class="col-xs-12">
+		{% endif %}
+		{% if not isHome %}
+                       <div class="col-xs-12 col-md-9">
+		{% endif %}
 
 
             <!-- ITEM DETAILS -->
