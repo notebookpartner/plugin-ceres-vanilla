@@ -19,11 +19,11 @@
         <div class="thumb-inner">
             <add-to-basket :item="itemData" :use-large-scale="true" :item-url="itemData | itemURL"></add-to-basket>
 <div class="row">
-                {% if isHome or isItem%}
+                {% if isHome or isItem %}
                        <div class="col-xs-12">
 		{% endif %}
 		
-		{% if not (isHome or isItem)%}
+		{% if not (isHome or isItem) %}
                        <div class="col-xs-12 col-md-3">
 		{% endif %}
     
@@ -67,7 +67,7 @@
                           <tbody>
 				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].names.name == 'Prozessor'">
 					<td> ${ properties.property.groups[0].names.name }</td>
-					<td> ${ properties.property.names.name }</td>
+					<td> ${ properties.property.names.name } ${ services.template.getCurrentTemplate() }</td>
 				</tr>
 			    	<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].names.name == 'Arbeitsspeicher'">
 					<td> ${ properties.property.groups[0].names.name }</td>
