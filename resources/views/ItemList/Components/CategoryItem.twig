@@ -65,7 +65,7 @@
                           <tbody>
 				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].names.name == 'Prozessor'">
 					<td> ${ properties.property.groups[0].names.name }</td>
-					<td> ${ properties.property.names.name } ${ services.template.getCurrentTemplate() }</td>
+					<td> ${ properties.property.names.name }</td>
 				</tr>
 			    	<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].names.name == 'Arbeitsspeicher'">
 					<td> ${ properties.property.groups[0].names.name }</td>
