@@ -25,7 +25,7 @@
     <div slot="ImageCarousel">
         {% set ImageCarouselOverride = LayoutContainer.show("Ceres::SingleItem.ImageCarousel") %}
         {% if ImageCarouselOverride|trim is empty %}
-            <item-image-carousel image-url-accessor="url" template="#vue-item-image-carousel"></item-image-carousel>
+            <item-image-carousel image-url-accessor="urlMiddle" template="#vue-item-image-carousel"></item-image-carousel>
         {% else %}
             {{ ImageCarouselOverride }}
         {% endif %}
