@@ -35,6 +35,17 @@
     {% for styleTemplate in get_additional_styles() %}
         {% include styleTemplate.path ignore missing with styleTemplate.params %}
     {% endfor %}
+    
+    <!-- Global site tag (gtag.js) - Google Ads: 762089872 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-762089872"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-762089872');
+</script>
+
+
 </head>
 
 <body>
