@@ -1,6 +1,6 @@
 <script type="x/template" id="vue-item-image-carousel">
     <div itemscope itemtype="http://schema.org/Thing">
-        <div>
+         <div class="owl-carousel owl-theme owl-single-item" ref="single">
             <div v-for="image in singleImages">
                 <a :href="image.url" data-lightbox="single-big-image-gallery">
                     <img :alt="getAltText(image)" :data-src="image.url" itemprop="image">
