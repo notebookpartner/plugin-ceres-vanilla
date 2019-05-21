@@ -3,7 +3,7 @@
         <div>
             <div v-for="image in singleImages">
                 <a :href="image.url" data-lightbox="single-big-image-gallery">
-                    <img :alt="getAltText(image)" class="owl-lazy" :data-src="image.url" itemprop="image">
+                    <img :alt="getAltText(image)" :data-src="image.url" itemprop="image">
                 </a>
             </div>
         </div>
