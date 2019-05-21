@@ -3,6 +3,19 @@
     max-height: 7rem; }
 }
 
+.container-fluid,
+.container-max {
+ margin-left:auto;
+ margin-right:auto;
+ padding-left:15px;
+ padding-right:15px;
+ padding-top:40px
+}
+
+.navbar {
+  padding-top: 25px;
+}
+
 owl-wrapper-outer {
   height: auto;
 }
