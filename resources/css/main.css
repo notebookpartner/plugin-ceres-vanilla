@@ -99,7 +99,32 @@ color: #4d4f4d;
 background-color: #FEFEFE;
 color: #4d4f4d;
 }
+
 .produktbeschreibung tr:hover {
 background-color: #32A4CA;
 color: #fff;
+}
+
+.tabelleBlau {
+	width:100%;
+	
+} 
+.tabelleBlau td,th{
+	padding: 4px 5px;
+	vertical-align: top;
+	
+} 
+.tabelleBlau tr:nth-child(odd) {
+	
+	background-color: #C4F1FC;
+	/*background-color: #ADD8E6;*/
+	color: #000;
+}
+.tabelleBlau tr:nth-child(even) {
+	background-color: #FEFEFE;
+	color: #000;
+}
+.tabelleBlau tr:hover {
+	background-color: #32A4CA;
+	color: #fff;
 }
