@@ -133,3 +133,9 @@ color: #fff;
 	background-color: #32A4CA;
 	color: #fff;
 }
+
+@media (min-width: 1200px) {
+ #single-carousel .owl-item img {
+  height:400px
+ }
+}
