@@ -45,7 +45,7 @@
 			    </div>		       
 		{% elseif (services.template.getCurrentTemplate() == 'tpl.item') %}
 		      
-             	<img :image-urls-data="itemData.images | itemImages(imageUrlAccessor)" width="100%" style="padding-left: 15px; padding-right:15px">
+             	<img :src="itemData.images.all[0].url" width="100%" style="padding-left: 15px; padding-right:15px">
         
 		{% else %}
                        <div class="col-xs-12 col-md-3">
