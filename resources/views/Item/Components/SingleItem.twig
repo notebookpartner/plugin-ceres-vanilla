@@ -5,6 +5,7 @@
 {% set shippingCat = config("Ceres.global.shippingCostsCategoryId") %}
 {% set isItem = true %}
 
+{{ component( "Ceres::ItemList.Components.CategoryImageCarousel") }}
 {% if enableCarousel is not defined %}
     {% if config("Ceres.item.enable_image_carousel") == "true" %}
         {% set enableCarousel = "true" %}
