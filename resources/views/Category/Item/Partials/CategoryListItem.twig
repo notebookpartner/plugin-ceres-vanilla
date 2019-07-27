@@ -66,7 +66,7 @@
 									{% endif %}
 								{% endfor %}
 								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Festplatte" %}
+									{% if properties.property.groups[0].names.name == "Festplattengröße" %}
 									<tr>
 										<td> {{ properties.property.groups[0].names.name }}</td>
 										<td> {{ properties.property.names.name }}</td>
@@ -74,7 +74,7 @@
 									{% endif %}
 								{% endfor %}
 								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].names.name == "Speichertyp" %}
+									{% if properties.property.groups[0].names.name == "Festplattentyp" %}
 									<tr>
 										<td> {{ properties.property.groups[0].names.name }}</td>
 										<td> {{ properties.property.names.name }}</td>
