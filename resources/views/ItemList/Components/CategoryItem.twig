@@ -44,8 +44,8 @@
 			    <!-- ./STORE SPECIALS -->
 			    </div>		       
 		{% elseif (services.template.getCurrentTemplate() == 'tpl.item') %}
-		      
-             	<img :src="itemData.images.all[0].url" width="100%" style="padding-left: 15px; padding-right:15px">
+		<div class="col-xs-12 col-md-3">      
+             		<img :src="itemData.images.all[0].url" width="100%" style="padding-left: 15px; padding-right:15px">
         
 		{% else %}
                        <div class="col-xs-12 col-md-3">
