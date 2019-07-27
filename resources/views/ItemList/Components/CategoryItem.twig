@@ -83,6 +83,10 @@
 					<td> ${ properties.property.groups[0].names.name }</td>
 					<td> ${ properties.property.names.name }</td>
 				</tr>
+				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].names.name == 'Displayauflösung'">
+					<td> ${ properties.property.groups[0].names.name }</td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
 				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].names.name == 'Betriebssystem'">
 					<td> ${ properties.property.groups[0].names.name }</td>
 					<td> ${ properties.property.names.name }</td>
