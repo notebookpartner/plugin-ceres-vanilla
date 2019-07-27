@@ -5,6 +5,14 @@
 {% set shippingCat = config("Ceres.global.shippingCostsCategoryId") %}
 {% set isItem = true %}
 
+{% if enableCarousel is not defined %}
+    {% if config("Ceres.item.enable_image_carousel") == "true" %}
+        {% set enableCarousel = "true" %}
+    {% else %}
+        {% set enableCarousel = "false" %}
+    {% endif %}
+{% endif %}
+
 <script type="x/template" id="vue-single-item">
     <div>
 	<div class="single container-max page-content">
