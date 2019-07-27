@@ -1,6 +1,6 @@
 <script type="x/template" id="vue-item-image-carousel">
     <div itemscope itemtype="http://schema.org/Thing">
-        <div v-for="image in singleImages">
+        <div v-for="(image, index) in singleImages" class="{ 'active': index === 0 }">
              <img :src="image.url" width="100%" style="padding-left: 15px; padding-right:15px">
         </div>
     </div>
