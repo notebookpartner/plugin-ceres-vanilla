@@ -15,11 +15,58 @@
 {% endif %}
 
 <script type="x/template" id="vue-category-item">
+	{% if (services.template.getCurrentTemplate() == 'tpl.item') %}
+	<!-- ITEM PAGE -->
+		<article class="cmp cmp-product-thumb cmp-product-thumb--grid">
+			<div class="thumb-inner">
+				<add-to-basket :item="itemData" :use-large-scale="true" :item-url="itemData | itemURL"></add-to-basket>
+				<div class="row">
+					<div class="col-xs-12 col-md-4">      
+						<img :src="itemData.images.all[0].url" width="100%">
+					</div>
+					<div class="col-xs-12 col-md-8">
+						<div class="thumb-content">
+							<a :href="itemData | itemURL" class="thumb-title small">
+								<h3> ${ itemData.texts.name2 } </h3>
+								<div class="thumb-meta">
+									<div class="">
+										<div v-if="itemData.prices.rrp && itemData.prices.rrp.price.value > 0" class="">
+											<del class="crossprice">
+												${ itemData.prices.rrp.price.formatted }
+											</del>
+										</div>
+
+										<div v-if="itemData.prices.rrp && itemData.prices.rrp.price.value > 0" class="price text-success">
+											${ itemData.prices.default.unitPrice.formatted }
+										</div>
+										<div v-else class="price CategoryItem">
+											${ itemData.prices.default.unitPrice.formatted }
+										</div>
+									</div>
+									<div class="category-unit-price" v-if="!(itemData.unit.unitOfMeasurement === 'C62' && itemData.unit.content === 1)">
+										<span>${ itemData.unit.content }</span>
+										<span>${ itemData.unit.names.name }</span>
+										<span v-if="itemData.variation.mayShowUnitPrice">| ${ itemData.prices.default.basePrice }</span>
+									</div>
+								</div>
+								<add-to-basket :item="itemData" :item-url="itemData | itemURL"></add-to-basket>
+								<span class="vat small text-muted">
+											{{ trans("Ceres::Template.itemInclVAT") }} {{ trans("Ceres::Template.itemExclusive") }}
+									<a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.itemShippingCosts") }}">{{ trans("Ceres::Template.itemShippingCosts") }}</a>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	<!-- END ITEM PAGE -->
+	{% else %}
+	
     <article class="cmp cmp-product-thumb cmp-product-thumb--grid">
         <div class="thumb-inner">
             <add-to-basket :item="itemData" :use-large-scale="true" :item-url="itemData | itemURL"></add-to-basket>
-<div class="row">
-
+			<div class="row">
                 {% if isHome%}
                        <div class="col-xs-12">
 		           <div class="thumb-image">
@@ -43,10 +90,6 @@
 						:decimal-count="decimalCount"></item-store-special>
 			    <!-- ./STORE SPECIALS -->
 			    </div>		       
-		{% elseif (services.template.getCurrentTemplate() == 'tpl.item') %}
-		<div class="col-xs-12 col-md-4">      
-             		<img :src="itemData.images.all[0].url" width="100%">
-        
 		{% else %}
                        <div class="col-xs-12 col-md-3">
 		           <div class="thumb-image">
@@ -76,8 +119,6 @@
     </div>
                 {% if isHome%}
                        <div class="col-xs-12">
-		{% elseif (services.template.getCurrentTemplate() == 'tpl.item') %}
-		       <div class="col-xs-12 col-md-8">
 		{% else %}
                        <div class="col-xs-12 col-md-9">
 		{% endif %}
@@ -154,4 +195,5 @@
             </div>
         </div>
     </article>
+	{% endif %}
 </script>
