@@ -48,8 +48,8 @@
       <file leaf-file-name="CategoryItem.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="125" selection-start-line="23" selection-start-column="125" selection-end-line="23" selection-end-column="125" />
+            <state relative-caret-position="442">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -144,9 +144,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="659" />
-    <option name="y" value="22" />
-    <option name="width" value="974" />
+    <option name="x" value="329" />
+    <option name="y" value="142" />
+    <option name="width" value="1139" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
@@ -264,12 +264,12 @@
       <workItem from="1525454403722" duration="659000" />
       <workItem from="1526322598854" duration="4474000" />
       <workItem from="1526329486190" duration="1323000" />
-      <workItem from="1564500083992" duration="4682000" />
+      <workItem from="1564500083992" duration="5378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27869000" />
+    <option name="totallyTimeSpent" value="28565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -642,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="125" selection-start-line="23" selection-start-column="125" selection-end-line="23" selection-end-column="125" />
+        <state relative-caret-position="442">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
