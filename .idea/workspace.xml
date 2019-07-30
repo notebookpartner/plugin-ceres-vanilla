@@ -48,8 +48,8 @@
       <file leaf-file-name="CategoryItem.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+            <state relative-caret-position="284">
+              <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -264,12 +264,12 @@
       <workItem from="1525454403722" duration="659000" />
       <workItem from="1526322598854" duration="4474000" />
       <workItem from="1526329486190" duration="1323000" />
-      <workItem from="1564500083992" duration="6513000" />
+      <workItem from="1564500083992" duration="7773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29700000" />
+    <option name="totallyTimeSpent" value="30960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -642,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+        <state relative-caret-position="284">
+          <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
         </state>
       </provider>
     </entry>
