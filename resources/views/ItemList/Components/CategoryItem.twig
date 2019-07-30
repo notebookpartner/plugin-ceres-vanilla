@@ -21,10 +21,10 @@
 			<div class="thumb-inner">
 				<add-to-basket :item="itemData" :use-large-scale="true" :item-url="itemData | itemURL"></add-to-basket>
 				<div class="row">
-					<div class="col-xs-12 col-md-4 push-md-8" style="display:block; margin: 68px auto auto; padding-left: 5px">
-						<img :src="itemData.images.all[0].url" width="100%">
+					<div class="col-xs-12 col-lg-4 push-lg-8" style="display:block; margin: 68px auto auto; padding-left: 5px">
+						<a :href="itemData | itemURL"><img :src="itemData.images.all[0].url" width="100%"></a>
 					</div>
-					<div class="col-xs-12 col-md-8 pull-md-4">
+					<div class="col-xs-12 col-lg-8 pull-lg-4">
 						<div class="thumb-content">
 							<a :href="itemData | itemURL" class="thumb-title small">
 								<h4> ${ itemData.texts.name2 } </h4>
