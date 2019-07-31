@@ -33,11 +33,8 @@
   "variation.itemId",
   "variation.mayShowUnitPrice",
   "variation.releasedAt",
-  
-    "variationProperties.*",
-    
-    "variationPropertyGroups.*",
-
+  "variationProperties.*",
+  "variationPropertyGroups.*",
   "filter.hasChildren",
   "filter.isSalable"
 ]
