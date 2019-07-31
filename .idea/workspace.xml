@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f19a02c-9028-44ab-874d-d3f6357855e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,22 +17,17 @@
       <file leaf-file-name="SingleItemView.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItemView.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
+            <state relative-caret-position="867">
               <caret line="51" column="71" selection-start-line="51" selection-start-column="71" selection-end-line="51" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContainerItemList.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Containers/Components/ContainerItemList.twig">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="SingleItem.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
+      <file leaf-file-name="Notifications.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/PageDesign/Components/Notifications.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+            <state relative-caret-position="238">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -39,8 +35,17 @@
       <file leaf-file-name="CategoryItem.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="17">
               <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Homepage.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="84" column="106" selection-start-line="84" selection-start-column="106" selection-end-line="84" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -48,56 +53,26 @@
       <file leaf-file-name="CategoryItem.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryListItem.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ItemsPerPage.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/ItemsPerPage.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryListItem.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="935">
               <caret line="55" column="113" selection-start-line="55" selection-start-column="113" selection-end-line="55" selection-end-column="113" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemList.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/ItemList.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemListView.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ItemList/ItemListView.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-148">
-              <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CeresVanillaSingleItemContext.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Contexts/CeresVanillaSingleItemContext.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CeresVanillaServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Providers/CeresVanillaServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="42" column="122" selection-start-line="42" selection-start-column="122" selection-end-line="42" selection-end-column="122" />
-              <folding>
-                <element signature="e#42#84#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -121,7 +96,6 @@
         <option value="$PROJECT_DIR$/resources/views/ItemList/ItemListView.twig" />
         <option value="$PROJECT_DIR$/resources/views/PageDesign/Partials/Header/Header.twig" />
         <option value="$PROJECT_DIR$/plugin.json" />
-        <option value="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" />
         <option value="$PROJECT_DIR$/resources/views/PageDesign/Partials/Footer.twig" />
         <option value="$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig" />
         <option value="$PROJECT_DIR$/resources/views/Item/SingleItem.twig" />
@@ -134,6 +108,7 @@
         <option value="$PROJECT_DIR$/resources/views/Item/SingleItemView.twig" />
         <option value="$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig" />
         <option value="$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig" />
+        <option value="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" />
       </list>
     </option>
   </component>
@@ -143,7 +118,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="329" />
     <option name="y" value="142" />
     <option name="width" value="1139" />
@@ -222,6 +197,21 @@
               <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Category" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Macros" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Checkout" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Containers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -231,6 +221,28 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Containers" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Customer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Customer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Homepage" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
@@ -253,6 +265,35 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ItemList" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PageDesign" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PageDesign" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ResultFields" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin-ceres-vanilla" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="StaticPages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="plugin-ceres-vanilla" type="b2602c69:ProjectViewProjectNode" />
@@ -304,16 +345,18 @@
       <workItem from="1525454403722" duration="659000" />
       <workItem from="1526322598854" duration="4474000" />
       <workItem from="1526329486190" duration="1323000" />
-      <workItem from="1564500083992" duration="8401000" />
+      <workItem from="1564500083992" duration="9043000" />
+      <workItem from="1564556932897" duration="710000" />
+      <workItem from="1564561645784" duration="333000" />
+      <workItem from="1564566824472" duration="145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31588000" />
+    <option name="totallyTimeSpent" value="33418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2109375" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -343,38 +386,31 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItemWrapper.twig">
+    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/PageDesign/PageDesign.twig">
+    <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/ItemsPerPage.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
+    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+        <state relative-caret-position="935">
+          <caret line="55" column="113" selection-start-line="55" selection-start-column="113" selection-end-line="55" selection-end-column="113" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.json">
+    <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="2278">
+          <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -575,13 +611,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItem.twig" />
-    <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/PageDesign/PageDesign.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -629,15 +658,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="42" column="122" selection-start-line="42" selection-start-column="122" selection-end-line="42" selection-end-column="122" />
-          <folding>
-            <element signature="e#42#84#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="731">
           <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
         </state>
       </provider>
@@ -645,45 +671,63 @@
     <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/ItemList.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ItemList/ItemListView.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        <state relative-caret-position="357">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Item/SingleItemView.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
+        <state relative-caret-position="867">
           <caret line="51" column="71" selection-start-line="51" selection-start-column="71" selection-end-line="51" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Containers/Components/ContainerItemList.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
+    <entry file="file://$PROJECT_DIR$/resources/views/PageDesign/Components/Notifications.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+        <state relative-caret-position="238">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="935">
           <caret line="55" column="113" selection-start-line="55" selection-start-column="113" selection-end-line="55" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/ItemsPerPage.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="84" column="106" selection-start-line="84" selection-start-column="106" selection-end-line="84" selection-end-column="106" />
         </state>
       </provider>
     </entry>
