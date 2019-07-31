@@ -47,6 +47,9 @@
 					</noscript>          
 					<a href="{{ itemUrl }}" class="thumb-title small">
 						<h3>{{ item.data.texts.name2 }}</h3>
+						{% if item.data.variationProperties[0].property.groups[0].names.name == "" %}
+							<div> {{ item.data.texts.shortDescription }}</div>
+						{% endif %}
 						<table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
 							<tbody>
 								{% for properties in item.data.variationProperties %}

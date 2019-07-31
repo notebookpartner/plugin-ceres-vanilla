@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f19a02c-9028-44ab-874d-d3f6357855e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Homepage.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Homepage.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="311">
               <caret line="84" column="107" selection-start-line="84" selection-start-column="107" selection-end-line="84" selection-end-column="107" />
             </state>
           </provider>
@@ -52,8 +53,8 @@
       <file leaf-file-name="CategoryItem.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="58" />
+            <state relative-caret-position="-612">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -67,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryListItem.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CategoryListItem.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="113" selection-start-line="55" selection-start-column="113" selection-end-line="55" selection-end-column="113" />
+            <state relative-caret-position="612">
+              <caret line="49" column="95" selection-start-line="49" selection-start-column="95" selection-end-line="49" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -106,8 +107,8 @@
         <option value="$PROJECT_DIR$/resources/views/Item/Components/SingleItem.twig" />
         <option value="$PROJECT_DIR$/resources/views/Item/SingleItemView.twig" />
         <option value="$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig" />
-        <option value="$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig" />
         <option value="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" />
+        <option value="$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig" />
       </list>
     </option>
   </component>
@@ -117,7 +118,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="329" />
     <option name="y" value="142" />
     <option name="width" value="1139" />
@@ -348,12 +349,13 @@
       <workItem from="1564556932897" duration="710000" />
       <workItem from="1564561645784" duration="333000" />
       <workItem from="1564566824472" duration="145000" />
-      <workItem from="1564567502703" duration="246000" />
+      <workItem from="1564567502703" duration="846000" />
+      <workItem from="1564575618137" duration="692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33664000" />
+    <option name="totallyTimeSpent" value="34956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -697,20 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="113" selection-start-line="55" selection-start-column="113" selection-end-line="55" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/ItemsPerPage.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -727,8 +715,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="311">
           <caret line="84" column="107" selection-start-line="84" selection-start-column="107" selection-end-line="84" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/CategoryItem.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Category/Item/Partials/CategoryListItem.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="49" column="95" selection-start-line="49" selection-start-column="95" selection-end-line="49" selection-end-column="95" />
         </state>
       </provider>
     </entry>
