@@ -126,7 +126,7 @@
             <div class="thumb-content">
                 <a :href="itemData | itemURL" class="thumb-title small">
                     <h3> ${ itemData.texts.name2 } </h3>
-						<div v-if="properties.property.groups[0].names.name"></div>
+						<div v-if="itemData.variationProperties.property.groups[0].names.name"></div>
 						<div v-else>${ itemData.texts.shortDescription }</div>
 
 		    <table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
