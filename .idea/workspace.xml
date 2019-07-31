@@ -43,8 +43,8 @@
       <file leaf-file-name="Homepage.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+            <state relative-caret-position="561">
+              <caret line="84" column="107" selection-start-line="84" selection-start-column="107" selection-end-line="84" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -348,12 +348,12 @@
       <workItem from="1564556932897" duration="710000" />
       <workItem from="1564561645784" duration="333000" />
       <workItem from="1564566824472" duration="145000" />
-      <workItem from="1564567502703" duration="49000" />
+      <workItem from="1564567502703" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33467000" />
+    <option name="totallyTimeSpent" value="33664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -727,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Homepage/Homepage.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        <state relative-caret-position="561">
+          <caret line="84" column="107" selection-start-line="84" selection-start-column="107" selection-end-line="84" selection-end-column="107" />
         </state>
       </provider>
     </entry>
