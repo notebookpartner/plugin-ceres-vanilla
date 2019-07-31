@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f19a02c-9028-44ab-874d-d3f6357855e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="129" column="45" selection-start-line="129" selection-start-column="45" selection-end-line="129" selection-end-column="45" />
+              <caret line="129" column="77" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -127,7 +127,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="496" />
     <option name="y" value="-23" />
     <option name="width" value="1139" />
@@ -362,12 +362,12 @@
       <workItem from="1564575618137" duration="2403000" />
       <workItem from="1564590581966" duration="1523000" />
       <workItem from="1564597131206" duration="2231000" />
-      <workItem from="1564600872817" duration="31000" />
+      <workItem from="1564600872817" duration="359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40452000" />
+    <option name="totallyTimeSpent" value="40780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -742,7 +742,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/ItemList/Components/CategoryItem.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="129" column="45" selection-start-line="129" selection-start-column="45" selection-end-line="129" selection-end-column="45" />
+          <caret line="129" column="77" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
         </state>
       </provider>
     </entry>
