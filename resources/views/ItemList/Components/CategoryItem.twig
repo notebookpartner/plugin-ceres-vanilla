@@ -126,14 +126,16 @@
             <div class="thumb-content">
                 <a :href="itemData | itemURL" class="thumb-title small">
                     <h3> ${ itemData.texts.name2 } </h3>
-		    {% if not itemData.defaultCategories[0].parentCategoryId == 73 %}
+		    {% if not itemData.defaultCategories[0].parentCategoryId == '73' %}
 		    <div>
 		     	${ itemData.texts.shortDescription }
 		    </div>
-		    {% endif %}
+
 		    <div>
 		   	${ itemData.texts.name3 }
 		    </div>
+
+		    {% endif %}
 
 		    <table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
                           <tbody>
