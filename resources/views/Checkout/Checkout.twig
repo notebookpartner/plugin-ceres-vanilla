@@ -153,12 +153,13 @@
                             {{ LayoutContainer.show("Ceres::Checkout.BeforePlaceOrder") }}
                             <place-order template="#vue-place-order" target-continue="{{ homepageURL }}{% if urls.appendTrailingSlash %}place-order/{% else %}/place-order{% endif %}" @payment-response="checkoutComp.showModal($event)"></place-order>
                             {{ LayoutContainer.show("Ceres::Checkout.AfterPlaceOrder") }}
+                            <div class="form-check">
+                                <accept-gtc-check template="#vue-accept-gtc-check"></accept-gtc-check>
+                            </div>
+                            {{ LayoutContainer.show("Ceres::Checkout.OptIns") }}
                         </div>
                         
-                        <div class="form-check">
-                            <accept-gtc-check template="#vue-accept-gtc-check"></accept-gtc-check>
-                        </div>
-                        {{ LayoutContainer.show("Ceres::Checkout.OptIns") }}
+
                     </div>
                 </div>
             </checkout>
