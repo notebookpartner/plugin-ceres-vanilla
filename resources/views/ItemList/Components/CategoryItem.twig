@@ -130,11 +130,11 @@
 		    <div>
 		     	${ itemData.texts.shortDescription }
 		    </div>
-
-		    <div>
-		   	${ itemData.texts.name3 }
-		    </div>
-
+		    {% if not isHome %}
+			    <div>
+				${ itemData.texts.name3 }
+			    </div>
+		    {% endif %}
 		    {% endif %}
 
 		    <table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
