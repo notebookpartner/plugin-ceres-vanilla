@@ -54,14 +54,12 @@
 						<table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
 							<tbody>
 								{% for properties in item.data.variationProperties %}
-									{% if properties.property.groups[0].id == "2" %}
-									<!--<tr>
+									{% if properties.property.groups[0].id == '2' %}
+									<tr>
 										<td> Prozessor </td>
 										<td> {{ properties.property.names.name }} - {{ properties.values.value }}</td>
-									</tr>-->
+									</tr>
 									{% endif %}
-									<td>1</td>
-									<td>{{properties | json_encode}}</td>
 								{% endfor %}
 									
 							</tbody>
