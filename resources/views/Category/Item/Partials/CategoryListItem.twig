@@ -60,10 +60,63 @@
 										<td> {{ properties.property.names.name }} - {{ properties.values.value }}</td>
 									</tr>
 									{% endif %}
-									<tr>
-									<td>{{ properties.property.groups[0] | json_encode}}</td>
-									</tr>
 								{% endfor %}
+								{% for properties in item.data.variationProperties %}
+									{% if properties.property.groups[0].id == '1' %}
+									<tr>
+										<td> Arbeitsspeicher </td>
+										<td> {{ properties.property.names.name }}</td>
+									</tr>
+									{% endif %}
+								{% endfor %}
+								{% for properties in item.data.variationProperties %}
+									{% if properties.property.groups[0].id == '3' %}
+									<tr>
+										<td> Festplattengröße </td>
+										<td> {{ properties.property.names.name }}</td>
+									</tr>
+									{% endif %}
+								{% endfor %}
+								{% for properties in item.data.variationProperties %}
+									{% if properties.property.groups[0].id == '4' %}
+									<tr>
+										<td> Festplattentyp </td>
+										<td> {{ properties.property.names.name }}</td>
+									</tr>
+									{% endif %}
+								{% endfor %}
+								{% for properties in item.data.variationProperties %}
+									{% if properties.property.groups[0].id == '5' %}
+									<tr>
+										<td> Displaygröße </td>
+										<td> {{ properties.property.names.name }}</td>
+									</tr>
+									{% endif %}
+								{% endfor %}
+								{% for properties in item.data.variationProperties %}
+								    {% if properties.property.groups[0].id == '6' %}
+									<tr>
+										<td> Displayauflösung </td>
+										<td> {{ properties.property.names.name }}</td>
+									</tr>
+								    {% endif %}
+								{% endfor %}
+								{% for properties in item.data.variationProperties %}
+									{% if properties.property.groups[0].id == '7' %}
+									<tr>
+										<td> Betriebssystem </td>
+										<td> {{ properties.property.names.name }}</td>
+									</tr>
+									{% endif %}
+								{% endfor %}
+								{% for properties in item.data.variationProperties %}
+									{% if properties.property.groups[0].id == '8' %}
+									<tr>
+										<td> Garantie </td>
+										<td> {{ properties.property.names.name }}</td>
+									</tr>
+									{% endif %}
+								{% endfor %}								
 									
 							</tbody>
 						</table>
