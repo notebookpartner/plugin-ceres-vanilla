@@ -141,9 +141,37 @@
 		    <table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
                           <tbody>
 				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].id == '2'">
-					<td>Prozessor</td>
+					<td>Prozessor </td>
 					<td> ${ properties.property.names.name } - ${ properties.values.value }</td>
 				</tr>
+			    	<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].id == '1'">
+					<td>Arbeitsspeicher </td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+			    	<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].id == '3'">
+					<td>Festplattengröße </td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].id == '4'">
+					<td>Festplattentyp </td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].id == '5'">
+					<td>Displaygröße </td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].id == '6'">
+					<td>Displayauflösung </td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].id == '7'">
+					<td>Betriebssystem </td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>
+				<tr v-for="properties in itemData.variationProperties " v-if="properties.property.groups[0].id == '8'">
+					<td>Garantie </td>
+					<td> ${ properties.property.names.name }</td>
+				</tr>				
                             </tbody>
                         
                     </table>
