@@ -55,11 +55,13 @@
 							<tbody>
 								{% for properties in item.data.variationProperties %}
 									{% if properties.property.groups[0].id == "2" %}
-									<tr>
+									<!--<tr>
 										<td> Prozessor </td>
 										<td> {{ properties.property.names.name }} - {{ properties.values.value }}</td>
-									</tr>
+									</tr>-->
 									{% endif %}
+									<td>1</td>
+									<td>{{properties | json_encode}}</td>
 								{% endfor %}
 									
 							</tbody>
