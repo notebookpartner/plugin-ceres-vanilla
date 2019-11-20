@@ -29,28 +29,28 @@
 			    </h1>
 				<table class="tabletopartikel" frame="void" style="padding-left: 13px; border-spacing:20px; padding-right: 16px; margin: 10px; margin-left:0px; text-align: left; line-height:16px" border="0">
 				    <tbody>
-					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Prozessor'">
-						<td> ${ properties.property.groups[0].names.name }</td>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].id == '2' ">
+						<td> Prozessor </td>
 						<td> ${ properties.property.names.name }</td>
 					</tr>
-					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Arbeitsspeicher'">
-						<td> ${ properties.property.groups[0].names.name }</td>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == '1'">
+						<td> Arbeitsspeicher </td>
 						<td> ${ properties.property.names.name }</td>
 					</tr>
-					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Festplatte'">
-						<td> ${ properties.property.groups[0].names.name }</td>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == '3'">
+						<td> Festplatte </td>
 						<td> ${ properties.property.names.name }</td>
 					</tr>
-					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Speichertyp'">
-						<td> ${ properties.property.groups[0].names.name }</td>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == '4'">
+						<td> Speichertyp </td>
 						<td> ${ properties.property.names.name }</td>
 					</tr>
-					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Displaygröße'">
-						<td> ${ properties.property.groups[0].names.name }</td>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == '5'">
+						<td> Displaygröße </td>
 						<td> ${ properties.property.names.name }</td>
 					</tr>
-					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Betriebssystem'">
-						<td> ${ properties.property.groups[0].names.name }</td>
+					<tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == '7'">
+						<td> Betriebssystem </td>
 						<td> ${ properties.property.names.name }</td>
 					</tr>
 				    </tbody>
