@@ -47,7 +47,7 @@
 					</noscript>          
 					<a href="{{ itemUrl }}" class="thumb-title small">
 						<h3>{{ item.data.texts.name2 }}</h3>
-						{% if not item.data.variationProperties[0].property.groups[0].names.name %}
+						{% if not item.data.variationProperties[0].property.names.name %}
 							<div> {{ item.data.texts.shortDescription }}</div>
 							<div> {{ item.data.texts.name3 }}</div>
 						{% endif %}
